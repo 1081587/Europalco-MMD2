@@ -12,6 +12,7 @@
 	/* yellow */
     --background-color: #070707;
     /* off-black */
+    --foreground-color: #171717;
     --purple-color: #593a83;
 	--darkmode-text-color: #FFFFFF;
     /* white */
@@ -27,8 +28,17 @@ html, body {
     font-family: 'Basier Circle', helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--black-color);
+    background: var(--background-color);
 }
+
+.top-bar{
+	position: fixed;
+	top: 0;
+	background: var(--foreground-color);
+	width: 100vw;
+}
+
+
 
 
 .wrap{
@@ -39,3 +49,38 @@ html, body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+.dark-overlay{
+	background: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: -50;
+}
+
+.banner{
+	background: url('images/banner.png');
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 480px;
+	margin-top: 50px;
+	border-bottom: 13px solid #ffda00;
+}
+
+.title-1{
+	background: #fff;
+}
+
+.title-2{
+	background: var(--primary-color);
+}
+
+
+/* TEXT */
+
+h1{
+	margin: 0;
+}
+
