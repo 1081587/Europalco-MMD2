@@ -16,15 +16,17 @@
 	/* white */
 	--p-text: #FFFFFF;
     /* white */
-    font-family: 'BasierCircle-Regular', helvetica, sans-serif;
-    src: url(assets/font/BasierCircle-Regular.ttf);
 	--text-align: left;
 	--line-height: 1.6;
 }
-
+@font-face {
+    font-family: 'BasierCircle-Regular';
+    src: url(assets/font/BasierCircle-Regular.ttf);
+}
 /* ----------------------------------- GLOBAL STUFF ----------------------------------- */
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-family: 'BasierCircle-Regular', helvetica, sans-serif;
 }
 
