@@ -20,13 +20,13 @@
 	--line-height: 1.6;
 }
 @font-face {
-    font-family: 'BasierCircle-Regular';
-    src: url(assets/font/BasierCircle-Regular.ttf);
+    font-family: 'Basier Circle';
+    src: "assets/font/BasierCircle-Regular.ttf" format("truetype");
 }
 /* ----------------------------------- GLOBAL STUFF ----------------------------------- */
 
 html {
     scroll-behavior: smooth;
-    font-family: 'BasierCircle-Regular', helvetica, sans-serif;
+    font-family: 'Basier Circle', helvetica, sans-serif;
 }
 
