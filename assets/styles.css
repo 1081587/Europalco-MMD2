@@ -10,14 +10,11 @@
 :root {
 	--primary-color: #ffda00;
 	/* yellow */
-	--black-color: #000000;
-	/* black */
-	--text-highlight-color: #FFFFFF;
-	/* white */
-	--p-text: #FFFFFF;
+    --background-color: #070707;
+    /* off-black */
+    --purple-color: #593a83;
+	--darkmode-text-color: #FFFFFF;
     /* white */
-	--text-align: left;
-	--line-height: 1.6;
 }
 @font-face {
     font-family: 'Basier Circle';
