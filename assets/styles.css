@@ -12,7 +12,9 @@
 	/* yellow */
     --background-color: #070707;
     /* off-black */
+    --foreground-translucent-black: rgba(23, 23, 23, 0.93);
     --foreground-color: #171717;
+    
     --purple-color: #593a83;
 	--darkmode-text-color: #FFFFFF;
     /* white */
@@ -88,7 +90,7 @@ html, body {
 .banner{
 	background: url('images/banner.png');
 	background-position: center;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 480px;
 	margin-top: 50px;
@@ -109,4 +111,23 @@ html, body {
 h1{
 	margin: 0;
 }
+
+
+
+
+
+
+
+
+.grid-container{
+	background: var(--foreground-translucent-black);
+	height: 100%;
+	margin: 7vw auto;
+	width: 86vw;
+	border-radius: 10px;
+	
+}
+
+
+
 
