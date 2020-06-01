@@ -8,24 +8,16 @@
 /* ----------------------------------- VARIABLES ----------------------------------- */
 
 :root {
-	--main-color: #FF7F00;
-	/* orange */
-	--dark-color: #10031E;
-	/* dark purple */
-	--accent-color: #321752;
-	/* light purple */
-	--black-color: #02000F;
+	--primary-color: #ffda00;
+	/* yellow */
+	--black-color: #000000;
 	/* black */
 	--text-highlight-color: #FFFFFF;
 	/* white */
 	--p-text: #FFFFFF;
-	/* white */
-	--light-color: #F4F3F2;
-	/* lightest grey */
-	--light-fg-color: #FCFCFB;
-	/* white */
-	--primary-font: 'Josefin Sans', sans-serif;
-	--secondary-font: 'Montserrat', sans-serif;
+    /* white */
+    font-family: 'BasierCircle-Regular', helvetica, sans-serif;
+    src: url(assets/font/BasierCircle-Regular.ttf);
 	--text-align: left;
 	--line-height: 1.6;
 }
