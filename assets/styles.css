@@ -37,11 +37,36 @@ html, body {
 	position: fixed;
 	top: 0;
 	background: var(--foreground-color);
-	width: 100vw;
+    width: 100vw;
+    height: 50px;
 }
 
+.top-bar li {
+    list-style: none;
+    display: inline-block;
+    margin: 2vw;
+}
 
+.top-bar li a {
+    color: white;
+    text-decoration: none;
+}
 
+.top-bar li:nth-child(4) a {
+    color: black;
+}
+
+.top-bar ul {
+    margin-left: 56vw;
+    height: 50px;
+    padding: 0;
+}
+
+.button {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 4px 10px;
+}
 
 .wrap{
 	height: 200vh;
@@ -60,6 +85,7 @@ html, body {
 	width: 100vw;
 	z-index: -50;
 }
+
 
 .banner{
 	background: url('images/banner.png');
