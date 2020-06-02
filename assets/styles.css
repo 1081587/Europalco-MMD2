@@ -72,6 +72,16 @@ html, body {
 	background-position: center;
 }
 
+.arrow-down{
+	background: url("icons/arrow-down.svg");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 15px 9px;
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+
 .top-bar nav{
 	float: right;
 	display: block;
@@ -84,7 +94,7 @@ html, body {
     height: 100%;
     top: -21px;
     position: relative;
-    padding: 15px 1.5vw 0;
+    padding: 15px 1vw 0;
 }
 
 .top-bar li:hover{
@@ -162,7 +172,7 @@ html, body {
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	z-index: -50;
+	z-index: -9;
 }
 
 
@@ -229,7 +239,7 @@ p{
 	height: 100%;
 	margin: 7vw auto;
 	width: 86vw;
-	border-radius: 10px;
+/* 	border-radius: 10px; */
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
