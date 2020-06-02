@@ -25,12 +25,17 @@
 }
 /* ----------------------------------- GLOBAL STUFF ----------------------------------- */
 
+
+html{
+	background: var(--background-color);
+}
+
 html, body {
     scroll-behavior: smooth;
     font-family: 'Basier Circle', helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--background-color);
+ 
 }
 
 .top-bar{
@@ -45,11 +50,26 @@ html, body {
     padding: 0 7vw;
 }
 
-.top-bar .logo{
+.top-bar a.logo{
 	width: 100px;
 	display: block;
 	float: left;
 	height: 100%;
+	background: url("icons/logo.svg");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.burger{
+	display: none;
+	width: 100px;
+	float: right;
+	height: 100%;
+	background: url("icons/burger-menu.svg");
+	background-size: 32%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .top-bar nav{
@@ -123,13 +143,17 @@ html, body {
 	display: block;
 }
 
-.wrap{
-	height: 200vh;
+.bcg-img{
+	height: 100vh;
 	background: url(images/bcg.svg);
 	background-position: -90px -60px;
 	background-size: 800px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	z-index: -10;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .dark-overlay{
@@ -211,4 +235,52 @@ p{
 
 
 
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	
+	.top-bar{
+		padding: 0;
+	}
+	
+	.burger{
+		display: block;
+		cursor: pointer;
+	}
+	
+	.top-bar nav ul{
+		display: none;
+	}
+	
+	.banner{
+		padding-top: 293px;
+	}
+	
+	.title-1{
+		width: 323px;
+		height: 56px;
+	}
+	
+	.title-2{
+		width: 266px;
+		height: 56px;
+		margin-top: 21px;
+	}
+	
+	h1{
+		font-size: 40px;
+		margin-left: 80px;
+		padding-top: 4px;
+	}
+	
+
+
+
+
+
+}
 
