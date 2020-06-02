@@ -307,6 +307,19 @@ p{
 		padding-top: 4px;
 	}
 	
+	.bcg-img{
+		display: none;
+	}
+	
+	.dark-overlay{
+		display: none;
+	}
+	
+	.grid-container{
+		margin: 0;
+		width: 100%;
+	}
+	
 
 
 
