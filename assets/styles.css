@@ -210,6 +210,10 @@ p{
 	font-weight: 100;
 }
 
+.item-b p{
+	color: var(--foreground-color);
+}
+
 
 
 
@@ -230,6 +234,22 @@ p{
 	backdrop-filter: blur(10px);
 	box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
 	display: grid;
+}
+
+.item-b{
+	background-color: var(--primary-color);
+	margin-bottom: 135px;
+}
+
+
+
+.image-1{
+	background: url(images/img1.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	border-top: 13px solid #ffda00;
 }
 
 
