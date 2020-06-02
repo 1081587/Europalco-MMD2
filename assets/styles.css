@@ -14,7 +14,6 @@
     /* off-black */
     --foreground-translucent-black: rgba(23, 23, 23, 0.99);
     --foreground-color: #171717;
-    
     --purple-color: #593a83;
 	--darkmode-text-color: #FFFFFF;
     /* white */
@@ -47,7 +46,8 @@ html, body {
     display: block;
     border-bottom: 2px solid #303030;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.65);
-    padding: 0 7vw;
+    padding: 0 4vw;
+    z-index: 100
 }
 
 .top-bar a.logo{
@@ -203,6 +203,8 @@ html, body {
 }
 
 
+
+
 /* TEXT */
 
 h1{
@@ -212,7 +214,8 @@ h1{
 }
 
 h2{
-	color: var(--darkmode-text-color);
+    color: var(--darkmode-text-color);
+    font-weight: 500;
 }
 
 p{
@@ -224,9 +227,6 @@ p{
 	color: var(--foreground-color);
 }
 
-
-
-
 .underline{
 	background: var(--primary-color);
 	width: 100%;
@@ -234,33 +234,56 @@ p{
 }
 
 
-.grid-container{
+
+.grid-container {
 	background: var(--foreground-translucent-black);
 	height: 100%;
 	margin: 7vw auto;
-	width: 86vw;
+	width: 83vw;
 /* 	border-radius: 10px; */
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
-	display: grid;
 }
 
-.item-b{
-	background-color: var(--primary-color);
-	margin-bottom: 135px;
+/* ---------------------- GRID TEMPLATE DESKTOP ----------------------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". article1 ."
+    "image image image"
+    "article2 article2 article2";
 }
 
+.item-a {
+    grid-area: article1;
+    padding: 3vw 0;
+    font-size: 19px;
+    line-height: 1.6;
+}
 
+.item-b {
+    grid-area: article2;
+    background-color: var(--primary-color);
+    margin-bottom: 135px;
+    padding: 2.5vw 16.5vw;
+    font-size: 19px;
+    line-height: 1.6;
+}
 
-.image-1{
-	background: url(images/img1.png);
+.slide-image {
+    grid-area: image;
+    background: url(images/img1.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 400px;
 	border-top: 13px solid #ffda00;
 }
+
+
 
 
 
