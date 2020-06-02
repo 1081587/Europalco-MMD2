@@ -14,6 +14,8 @@
     /* off-black */
     --foreground-translucent-black: rgba(23, 23, 23, 0.99);
     --foreground-color: #171717;
+    --dark-color: #171717;
+    /* only for stuff that doesn't change */
     --purple-color: #593a83;
     --darkmode-text-color: #FFFFFF;
     /* white */
@@ -31,7 +33,7 @@ html {
 }
 
 html, body {
-/*     scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     font-family: 'Basier Circle', helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -235,7 +237,7 @@ p {
     height: 100%;
     margin: 7vw auto;
     width: 83vw;
-    /* 	border-radius: 10px; */
+    border-radius: 4px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
@@ -251,23 +253,26 @@ p {
 /* 	background: red; */
 	display: block;
 	float: left;
-	padding-top: calc(50px + 7vw);
+	padding-top: calc(50px + 5vw);
 }
 
 .slide-bcg{
-	width: 83vw;
+	width: 84vw;
 	height: 75vh;
 	display: block;
 	background:  var(--foreground-translucent-black);
 	margin: 0 auto;
-	padding: 35px;
 	box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    position: relative;
 }
 
 .flexbox-booking{
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	top: 50%;
+	
 }
 
 .icon-bcg{
@@ -276,9 +281,74 @@ p {
 	background: var(--primary-color);
 	border-radius: 4px;
 	margin: 0 50px;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.icon1{
+	background: url("icons/studios-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 190px;
+}
+
+.icon2{
+	background: url("icons/tech-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 190px;
 }
 
 
+div.bottom-bar{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	padding: 0 35px;
+}
+
+.slide-bcg a.skip{
+	text-align: right;
+	display: block;
+	float: right;
+	color: var(--darkmode-text-color);
+	margin: 35px 35px 0 0;
+	text-decoration: none;
+}
+
+.slide-bcg a.skip:hover{
+	text-decoration: underline;
+}
+
+.slide-bcg h2{
+	text-align: center;
+	width: 100%;
+	display: block;
+	float: left;
+	font-size: 40px;
+	margin: 17px 0 35px;
+}
+
+.icon-bcg h3{
+	color: var(--dark-color);
+	text-decoration: none;
+	text-align: center;
+}
+
+.slide-bcg div.bottom-bar h4{
+	display: block;
+	float: left;
+	color: var(--darkmode-text-color);
+}
+
+.slide-bcg div.bottom-bar h5{
+	color: var(--primary-color);
+	display: block;
+	float: right;
+	text-align: right;
+}
 
 
 /* ---------------------- GRID TEMPLATE DESKTOP ----------------------- */
