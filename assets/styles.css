@@ -271,6 +271,7 @@ p {
 
 .slide-bcg{
 	width: 84vw;
+	min-width: 780px;
 	height: 640px;
 	display: block;
 	background:  var(--foreground-translucent-black);
@@ -287,7 +288,24 @@ p {
 	min-width: 620px;
 	top: 50%;
 	margin: 0 auto;
-	
+}
+
+.flexbox-booking2{
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	min-width: 740px;
+	top: 50%;
+	margin: 0 auto;
+}
+
+.flexbox-booking3{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	min-width: 740px;
+	top: 50%;
+	margin: 0 auto;
 }
 
 .icon-bcg{
@@ -302,6 +320,44 @@ p {
 }
 
 .icon-bcg:hover {
+    /* 	background: var(--purple-color); */
+    background: #ffe759;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
+}
+
+.icon-bcg2{
+	width: 20vw;
+	height: 20vw;
+	background: var(--primary-color);
+	border-radius: 4px;
+	padding: 0;
+	text-decoration: none;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
+	display: block;
+	min-width: 240px;
+	min-height: 240px;
+}
+
+.icon-bcg2:hover {
+    /* 	background: var(--purple-color); */
+    background: #ffe759;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
+}
+
+.icon-bcg3{
+	width: 12vw;
+	height: 12vw;
+	background: var(--primary-color);
+	border-radius: 4px;
+	padding: 0;
+	text-decoration: none;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
+	display: block;
+	min-width: 10px;
+	min-height: 10px;
+}
+
+.icon-bcg3:hover {
     /* 	background: var(--purple-color); */
     background: #ffe759;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
@@ -328,11 +384,55 @@ p {
 	margin: 0 auto;
 }
 
+.icon3{
+	background: url("icons/virtual-icon.svg");
+	background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    height: 190px;
+	width: 240px;
+	margin: 20px auto;
+}
+
+.icon4{
+	background: url("icons/chroma-icon.svg");
+	background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+	height: 190px;
+	width: 240px;
+	display: block;
+	margin: 20px auto;
+}
+
+.icon5{
+	background: url("icons/mix-icon.svg");
+	background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+	height: 190px;
+	width: 240px;
+	display: block;
+	margin: 20px auto;
+}
+
+.ico{
+	background: url("icons/ar-icon.svg");
+	background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+	height: 12vw;
+	width: 240px;
+	display: block;
+	margin: 20px auto;
+}
+
+
 div.bottom-bar {
     bottom: 0;
     position: absolute;
     width: 100%;
-    padding: 0 35px;
+    padding: 0 35px 25px;
 }
 
 div.bottom-bar .button{
@@ -345,7 +445,7 @@ div.bottom-bar .button{
 	display: block;
 	float: right;
 	color: var(--darkmode-text-color);
-	margin: 35px 35px 0 0;
+	margin: 25px 35px 0 0;
 	text-decoration: none;
 }
 
@@ -382,10 +482,20 @@ div.bottom-bar .button{
     font-size: 30px;
 }
 
+.icon-bcg2 h3 {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
 .slide-bcg div.bottom-bar h4 {
     display: block;
     float: left;
     color: var(--darkmode-text-color);
+    margin: 0;
 }
 
 .slide-bcg div.bottom-bar h5 {
@@ -393,6 +503,7 @@ div.bottom-bar .button{
     display: block;
     float: right;
     text-align: right;
+    margin: 0;
 }
 
 /* ---------------------- GRID TEMPLATE DESKTOP ----------------------- */
