@@ -263,7 +263,7 @@ p {
 /* ---------------------- STYLES BOOKING SLIDESHOW ----------------------- */
 
 .section-wrap{
-	height: 100vh;
+	height: 800px;
 	width: 100%;
 /* 	background: red; */
 	display: block;
@@ -273,7 +273,7 @@ p {
 
 .slide-bcg{
 	width: 84vw;
-	height: 75vh;
+	height: 640px;
 	display: block;
 	background:  var(--foreground-translucent-black);
 	margin: 0 auto;
@@ -284,9 +284,11 @@ p {
 
 .flexbox-booking{
 	display: flex;
-	justify-content: center;
-	width: 100%;
+	justify-content: space-around;
+	width: 60%;
+	min-width: 620px;
 	top: 50%;
+	margin: 0 auto;
 	
 }
 
@@ -295,10 +297,10 @@ p {
 	height: 300px;
 	background: var(--primary-color);
 	border-radius: 4px;
-	margin: 0 50px;
 	padding: 20px;
 	text-decoration: none;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
+	display: block;
 }
 
 .icon-bcg:hover{
@@ -310,17 +312,22 @@ p {
 .icon1{
 	background: url("icons/studios-icon.svg");
 	background-position: center;
-    background-size: contain;
+    background-size: 230px;
     background-repeat: no-repeat;
     height: 190px;
+	width: 240px;
+	margin: 0 auto;
 }
 
 .icon2{
 	background: url("icons/tech-icon.svg");
 	background-position: center;
-    background-size: contain;
+    background-size: 160px;
     background-repeat: no-repeat;
-    height: 190px;
+	height: 190px;
+	width: 240px;
+	display: block;
+	margin: 0 auto;
 }
 
 
@@ -329,6 +336,11 @@ div.bottom-bar{
 	position: absolute;
 	width: 100%;
 	padding: 0 35px;
+}
+
+div.bottom-bar .button{
+	 float: right;
+	 display: block;
 }
 
 .slide-bcg a.skip{
@@ -344,13 +356,26 @@ div.bottom-bar{
 	text-decoration: underline;
 }
 
+.slide-bcg a.back{
+	text-align: right;
+	display: block;
+	float: left;
+	color: var(--darkmode-text-color);
+	margin: 35px 0 0 35px;
+	text-decoration: none;
+}
+
+.slide-bcg a.back:hover{
+	text-decoration: underline;
+}
+
 .slide-bcg h2{
 	text-align: center;
 	width: 100%;
 	display: block;
 	float: left;
 	font-size: 40px;
-	margin: 17px 0 35px;
+	margin: 30px 0 70px;
 }
 
 .icon-bcg h3{
