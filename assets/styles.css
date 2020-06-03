@@ -58,7 +58,7 @@ html, body {
     float: left;
     height: 100%;
     background: url("icons/logo.svg");
-    background-size: 40%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -512,14 +512,7 @@ div.bottom-bar .button{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
-    grid-template-areas: 
-    ". article1 ."
-    "image image image" 
-    "article2 article2 article2" 
-    "slide-image slide-image slide-image" 
-    ". article3 ."
-    "slide-image2 slide-image2 slide-image2" 
-    ". article4 ."
+    grid-template-areas: ". article1 ." "image image image" "article2 article2 article2" "slideshow slideshow slideshow" ". article3 ." " slideshow2 slideshow2  slideshow2" ". article4 ."
 }
 
 .item-a {
@@ -547,8 +540,8 @@ div.bottom-bar .button{
     border-top: 13px solid #ffda00;
 }
 
-.slide-image {
-    grid-area: slide-image;
+.slideshow-container {
+    grid-area: slideshow;
     background: url(images/img1.png);
     background-position: center;
     background-size: cover;
@@ -568,14 +561,28 @@ div.bottom-bar .button{
     color: var(--darkmode-text-color);
 }
 
+#learn-more {
+    width: 150px;
+    height: 100%;
+    font-size: 16px;
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
+
+#learn-more a {
+    text-decoration: none;
+    color: black;
+}
+
 .item-d {
     grid-area: article4;
     font-size: 19px;
     line-height: 2.5;
 }
 
-.slide-image2 {
-    grid-area: slide-image2;
+/*
+.slideshow-container2 {
+    grid-area: slideshow2;
     background: url(images/Land-Facilities/Dressing-2.1.jpg);
     background-position: center;
     background-size: cover;
@@ -584,6 +591,89 @@ div.bottom-bar .button{
     margin-top: 135px;
     margin-bottom: 50px;
 }
+*/
+
+.slideshow-container2 {
+    grid-area: slideshow2;
+}
+
+.slideshow-container2 img {
+    width: 100%;
+    margin-top: 135px;
+    margin-bottom: 50px;
+}
+
+/* ---------------------- SLIDESHOW ----------------------- */
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 69%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
