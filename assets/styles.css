@@ -741,13 +741,6 @@ div.bottom-bar .button{
 		width: 100%;
 	}
 	
-
-	
-
-
-
-
-
 .item-c ul {
     color: var(--foreground-color);
     color: var(--darkmode-text-color);
@@ -760,44 +753,6 @@ div.bottom-bar .button{
         overflow-x: hidden;
     }
 
-    .top-bar {
-        padding: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-    .top-bar nav ul {
-        display: none;
-    }
-    .banner {
-        padding-top: 293px;
-    }
-    .title-1 {
-        width: 323px;
-        height: 56px;
-    }
-    .title-2 {
-        width: 266px;
-        height: 56px;
-        margin-top: 21px;
-    }
-    h1 {
-        font-size: 40px;
-        margin-left: 80px;
-        padding-top: 4px;
-    }
-    .bcg-img {
-        display: none;
-    }
-    .dark-overlay {
-        display: none;
-    }
-    .grid-container {
-        margin: 0;
-        width: 100%;
-    }
-  } }
 
   /*mobile nav */
 
@@ -851,8 +806,6 @@ padding-top: 22px;
  
 }
 
-
-
 .nav-mobile ul {
     padding: 0;
     
@@ -903,55 +856,16 @@ color: white;
     float: right;
 }
 
-    .item-c ul {
-        color: var(--foreground-color);
-        color: var(--darkmode-text-color);
-        font-weight: 100;
-    }
+.item-c ul {
+     color: var(--foreground-color);
+    color: var(--darkmode-text-color);
+    font-weight: 100;
+}
     
-    @media only screen and (min-width: 769px) {
-		.nav-mobile-final{
-			display: none;
-		}
-	
+@media only screen and (min-width: 769px) {
+	.nav-mobile-final{
+	display: none;
 	}
-    
-    @media only screen and (max-width: 768px) {
-        .top-bar {
-            padding: 0;
-        }
-        .burger {
-            display: block;
-            cursor: pointer;
-        }
-        .top-bar nav ul {
-            display: none;
-        }
-        .banner {
-            padding-top: 293px;
-        }
-        .title-1 {
-            width: 323px;
-            height: 56px;
-        }
-        .title-2 {
-            width: 266px;
-            height: 56px;
-            margin-top: 21px;
-        }
-        h1 {
-            font-size: 40px;
-            margin-left: 80px;
-            padding-top: 4px;
-        }
-        .bcg-img {
-            display: none;
-        }
-        .dark-overlay {
-            display: none;
-        }
-        .grid-container {
-            margin: 0;
-            width: 100%;
-        }
-    }
+	
+}   }
+}
