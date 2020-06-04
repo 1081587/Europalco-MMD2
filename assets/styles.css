@@ -270,7 +270,7 @@ p {
 /* 	background: red; */
 	display: block;
 	float: left;
-	padding-top: calc(50px + 5vw);
+	padding-top: calc(50px + 3vw);
 }
 
 .slide-bcg{
