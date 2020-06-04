@@ -74,6 +74,10 @@ html, body {
     background-position: center;
 }
 
+.nav-mobile-final{
+	display: none;
+}
+
 .arrow-down {
     background: url("icons/arrow-down.svg");
     background-size: 40%;
@@ -268,7 +272,7 @@ p {
 /* 	background: red; */
 	display: block;
 	float: left;
-	padding-top: calc(50px + 5vw);
+	padding-top: calc(50px + 3vw);
 }
 
 .slide-bcg{
@@ -910,14 +914,15 @@ color: white;
 }
 
 .nav-expandable {
-display: flex;
-margin: 0 auto;
-
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
 }
 
-.nav-expandable {
-    padding-right: 30%;
+.nav-mobile-final{
+	display: block;
 }
+
 .arrow-down {
     float: right;
 }
@@ -927,6 +932,14 @@ margin: 0 auto;
         color: var(--darkmode-text-color);
         font-weight: 100;
     }
+    
+    @media only screen and (min-width: 769px) {
+		.nav-mobile-final{
+			display: none;
+		}
+	
+	}
+    
     @media only screen and (max-width: 768px) {
         .top-bar {
             padding: 0;
