@@ -499,7 +499,7 @@ div.bottom-bar .button{
 	 display: block;
 }
 
-.slide-bcg a.skip{
+a.skip{
 	text-align: right;
 	display: block;
 	float: right;
@@ -1064,8 +1064,7 @@ div#contact .slide-bcg form{
 	display: flex;
 	padding-top: 112px;
 	justify-content: center;
-	}
-	
+	}	
 	
 	.top-bar-language button {
 	background-color:var(--background-color);
@@ -1226,8 +1225,14 @@ div#contact .slide-bcg form{
 	    display: none !important;
     }
     
+    .mobile-toggle{
+	    display: none;
+    }
+    
     .section-wrap{
 	    padding-top: 50px;
+	    height: 100vh;
+		position: fixed;
     }
     
     .slide-bcg{
@@ -1236,16 +1241,20 @@ div#contact .slide-bcg form{
 	    min-width: 0;
 	    border-radius: 0;
 	    padding-top: 20px;
+	    overflow-y: scroll;
+	    background: var(--dark-color);
     }
     
     .flexbox-booking{
 	    flex-direction: column;
 	    min-width: 0;
+	    margin-bottom: 80px;
     }
     
     .flexbox-booking2{
 	    flex-direction: column;
 	    min-width: 0;
+	    margin-bottom: 80px;
     }
     
     .icon-bcg{
@@ -1280,6 +1289,17 @@ div#contact .slide-bcg form{
 	    margin: 0;
 	    color: var(--darkmode-text-color);
 	    text-align: center;
+    }
+    
+    .bottom-mobile-bar{
+	    height: 80px;
+		position: fixed;
+		background: #1e1e1e;
+		width: 100%;
+		bottom: 0;
+		box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.5);
+		border-top: 2px solid #303030;
+		z-index: 90;
     }
     
     

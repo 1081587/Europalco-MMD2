@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="assets/styles.css" media="screen" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/form.js" defer></script>
 
 </head>
 
@@ -54,17 +55,20 @@
 
         <!-- ///////////////////////// FIRST SLIDE ///////////////////////// -->
 		
+		<div class="bottom-mobile-bar desktop-hidden">
+			<a class="skip" href="#contact">Skip to contact ></a>
+		</div>
 		<div id="1" class="section-wrap">
 			<div class="slide-bcg">
 				<a class="skip mobile-hidden" href="#contact">Skip to contact ></a>
 				<h4 class="desktop-hidden">Step 1/5</h4>
 				<h2>What are you interested in?</h2>
 				<div class="flexbox-booking">
-					<a href="#studio" class="icon-bcg">
+					<a id="studio-link" href="#studio" class="icon-bcg">
 						<div class="icon1"></div>
 						<h3>Studio</h3>
 					</a>
-					<a href="#tech" class="icon-bcg">
+					<a id="tech-link" href="#tech" class="icon-bcg">
 						<div class="icon2"></div>
 						<h3>Technology</h3>
 					</a>
@@ -73,15 +77,12 @@
 					<h4>Step 1/5</h4>
 					<h5>Don’t worry, you can change this later</h5>
 				</div>
-				<div class="bottom-mobile-bar desktop-hidden">
-					<a class="skip" href="#contact">Skip to contact ></a>
-				</div>
 			</div>
 		</div>
 		
         <!-- ///////////////////////// STUDIO SLIDE ///////////////////////// -->
 
-		<div id="studio" class="section-wrap">
+		<div id="studio" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
 				<a href="#1" class="back">< Back</a>
 				<h2>Which studio?</h2>
@@ -99,7 +100,7 @@
 						<h3>Mixed studios</h3>
 					</div>
 				</div>
-				<div class="bottom-bar">
+				<div class="bottom-bar mobile-hidden">
 					<h4>Step 2/5</h4>
 					<div class="button">
                         <a href="#date">Next</a>
@@ -110,7 +111,7 @@
 		
 		        <!-- ///////////////////////// TECH SLIDE ///////////////////////// -->
 
-		<div id="tech" class="section-wrap">
+		<div id="tech" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
 				<a href="#1" class="back">< Back</a>
 				<h2>Which studio?</h2>
@@ -159,7 +160,7 @@
 					</div>
 				</div>
 
-				<div class="bottom-bar">
+				<div class="bottom-bar mobile-hidden">
 					<h4>Step 2/5</h4>
 					<div class="button">
                         <a href="#date">Next</a>
@@ -168,7 +169,7 @@
 			</div>
 		</div>
         
-        <div id="date" class="section-wrap">
+        <div id="date" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
 				<a href="#studio" class="back">< Back</a>
 					<a class="skip" href="#contact">Skip to contact ></a>
@@ -195,7 +196,7 @@
 				
 				
 				
-				<div class="bottom-bar">
+				<div class="bottom-bar mobile-hidden">
 					<h4>Step 3/5</h4>
 					<div class="button">
                         <a href="#contact">Next</a>
@@ -204,7 +205,7 @@
 			</div>
 		</div>
 		
-		<div id="contact" class="section-wrap">
+		<div id="contact" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
 				<a href="#date" class="back">< Back</a>
 				<h2>Contact us!</h2>
@@ -219,7 +220,7 @@
 				
 				
 				
-				<div class="bottom-bar">
+				<div class="bottom-bar mobile-hidden">
 					<h4>Step 4/5</h4>
 					<div class="button">
                         <a href="#summary">Next</a>
@@ -229,7 +230,7 @@
 		</div>
 		
 		
-		<div id="summary" class="section-wrap">
+		<div id="summary" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
 				<a href="#contact" class="back">< Back</a>
 				<h2>Summary</h2>
@@ -253,7 +254,7 @@
 				
 				
 				
-				<div class="bottom-bar">
+				<div class="bottom-bar mobile-hidden">
 					<h4>Step 5/5</h4>
 					<div class="button">
                         <a href="#end">Submit</a>
@@ -262,7 +263,7 @@
 			</div>
 		</div>
 		
-		<div id="end" class="section-wrap">
+		<div id="end" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
 				<h2>Thank you for your inquiry!</h2>
 				
