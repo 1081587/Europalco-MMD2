@@ -1284,15 +1284,13 @@ div#contact .slide-bcg form{
 	.desktop-hidden{
 	    display: block !important;
 	}
-
-
     
     .mobile-hidden{
 	    display: none !important;
     }
     
     .mobile-toggle{
-	    display: none;
+	    display: none !important;
     }
     
     .section-wrap{
@@ -1368,6 +1366,27 @@ div#contact .slide-bcg form{
 		z-index: 90;
     }
     
+    .bottom-mobile-bar .button{
+		width: 40%;
+		height: 40px;
+		margin: 18px auto 0;
+		font-size: 24px;
+		padding-top: 4px;
+		text-align: center;
+		cursor: pointer;
+    }
+    
+    .bottom-mobile-bar p{
+	    width: 30%;
+		display: block;
+		position: absolute;
+		top: 13px;
+		padding-left: 27px;
+    }
+    
+    div#date .slide-bcg form{
+	    width: 80%;
+    }
     
     
     
