@@ -222,6 +222,55 @@ html, body {
     margin-top: 35px;
 }
 
+.footer {
+    background-color: var(--foreground-color);
+    display: flex;
+    margin: 0 auto;
+}
+
+.foot-logo {
+width: 20vw;
+display: block;
+background: url("icons/logo.svg");
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: center;
+margin: 0 auto;
+}
+
+.foot-info {
+    width: 20vw;
+    margin: 3vw auto;
+}
+
+.foot-info h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.foot-info p {
+    color: #9c9c9c;
+    line-height: 1.8;
+    margin-top: 0;
+}
+
+.end-section {
+    background-color: var(--purple-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.end-section h5{
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+
+.end-section p{
+    font-size: 10px;
+    margin: 10px 0 0 0;
+}
+
 /* TEXT */
 
 h1 {
@@ -615,19 +664,6 @@ div.bottom-bar .button{
     font-size: 19px;
     line-height: 2.5;
 }
-
-/*
-.slideshow-container2 {
-    grid-area: slideshow2;
-    background: url(images/Land-Facilities/Dressing-2.1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    margin-top: 135px;
-    margin-bottom: 50px;
-}
-*/
 
 .slideshow-container2 {
     grid-area: slideshow2;
