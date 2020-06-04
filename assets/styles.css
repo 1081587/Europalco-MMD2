@@ -19,6 +19,8 @@
     --purple-color: #593a83;
     --darkmode-text-color: #FFFFFF;
     /* white */
+    --form-bcg: #454545;
+    --form-border: #626262;
 }
 
 @font-face {
@@ -357,8 +359,9 @@ p {
 	text-decoration: none;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
 	display: block;
-	min-width: 10px;
-	min-height: 10px;
+	min-width: 130px;
+	min-height: 130px;
+	margin-bottom: 30px;
 }
 
 .icon-bcg3:hover {
@@ -479,6 +482,14 @@ div.bottom-bar .button{
 	margin: 30px 0 70px;
 }
 
+div#tech .slide-bcg h2{
+	margin-bottom: 40px;
+}
+
+div#summary .slide-bcg h2{
+	margin-bottom: 40px;
+}
+
 .icon-bcg h3 {
     color: var(--dark-color);
     text-decoration: none;
@@ -495,6 +506,85 @@ div.bottom-bar .button{
     margin: 0;
 }
 
+.form-container{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.form-container p{
+	text-align: right;
+	padding-right: 25%;
+	cursor: pointer;
+}
+
+.form-container p:hover{
+	text-decoration: underline;
+}
+
+.slide-bcg form{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+div#date .slide-bcg form{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	height: 300px;
+	overflow-y: scroll;
+	position: relative;
+	border-radius: 4px;
+}
+
+div#contact .slide-bcg form{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	height: 320px;
+	overflow-y: scroll;
+	position: relative;
+	border-radius: 4px;
+}
+
+.bottom-shadow{
+	width: 100%;
+	background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	height: 50px;
+	position: absolute;
+	top: 300px;
+}
+
+.slide-bcg form input{
+	width: 100%;
+	background: var(--form-bcg);
+	border: 1px solid var(--form-border);
+	box-sizing: border-box;
+	border-radius: 4px;
+	height: 39px;
+	font-size: 18px;
+	font-family: 'Basier Circle', helvetica, sans-serif;
+	font-weight: 100;
+	color: var(--darkmode-text-color);
+	padding: 0 15px;
+}
+
+.slide-bcg form textarea{
+	width: 100%;
+	background: var(--form-bcg);
+	border: 1px solid var(--form-border);
+	box-sizing: border-box;
+	border-radius: 4px;
+	min-height: 200px;
+	font-size: 18px;
+	font-family: 'Basier Circle', helvetica, sans-serif;
+	font-weight: 100;
+	color: var(--darkmode-text-color);
+	padding: 10px 15px;
+	resize: vertical;
+}
+
 .slide-bcg div.bottom-bar h4 {
     display: block;
     float: left;
@@ -509,6 +599,40 @@ div.bottom-bar .button{
     text-align: right;
     margin: 0;
 }
+
+.add-more{
+	border-radius: 100px;
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+	background: var(--form-bcg);
+	border: 2px solid var(--form-border);
+}
+
+.summary-container{
+	width: 82%;
+	display: block;
+	height: 400px;
+	overflow-y: scroll;
+	margin: 0 auto;
+}
+
+.summary-left{
+	width: 50%;
+	display: block;
+	float: left;
+	height: 100%;
+}
+
+.summary-right{
+	width: 50%;
+	display: block;
+	float: right;
+	height: 100%;
+}
+
+
 
 /* ---------------------- GRID TEMPLATE DESKTOP ----------------------- */
 
