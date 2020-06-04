@@ -499,7 +499,7 @@ div.bottom-bar .button{
 	 display: block;
 }
 
-.slide-bcg a.skip{
+a.skip{
 	text-align: right;
 	display: block;
 	float: right;
@@ -1006,10 +1006,75 @@ div#contact .slide-bcg form{
 		width: 100%;
 	}
 	
+	.item-c ul {
+	    color: var(--foreground-color);
+	    color: var(--darkmode-text-color);
+	    font-weight: 100;
+	}
+	
     .body {
         overflow-x: hidden;
     }
 
+
+  /*mobile nav */
+
+	.top-bar-language {
+	    display: flex;
+	    padding-top: 112px;
+	    justify-content: center;
+	}
+
+
+   .top-bar-language button {
+        background-color:var(--background-color);
+        border-width: 2px;
+        border-color: #ffda00;
+        color: #ffda00;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        width: 128px;
+        height: 50px;
+      }
+      
+    .port {
+        border-style: solid none solid solid;
+        border-radius: 5px 0 0 5px;
+    }
+    
+	 .eng {
+	    border-radius: 5px;
+	    border-radius: 0 5px 5px 0;
+	 }
+
+	.nav-border {
+	border-bottom: solid 3px #ffda00;
+	position: absolute;
+	width: 65%;
+	margin-left: 17%;
+	
+	}
+	
+	.nav-mobile ul li   {
+	    display: block;
+	    text-align: center;
+	    height: 77px;
+	  
+	    font-weight: 500;
+	font-size: 30px;
+	line-height: 32px;
+	padding-top: 22px;
+	 text-decoration: none;
+	 list-style: none;
+	 
+	}
+	
+	.nav-mobile ul {
+		padding: 0;
+    }
+    
     .top-bar {
         padding: 0;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
@@ -1064,8 +1129,7 @@ div#contact .slide-bcg form{
 	display: flex;
 	padding-top: 112px;
 	justify-content: center;
-	}
-	
+	}	
 	
 	.top-bar-language button {
 	background-color:var(--background-color);
@@ -1214,20 +1278,27 @@ div#contact .slide-bcg form{
         margin: 0;
         width: 100%;
     }
-    
-    
+  
     /* ---------------------- Booking Form - Mobile ----------------------- */
 	
 	.desktop-hidden{
-	    display: block;
+	    display: block !important;
 	}
 
+
+    
     .mobile-hidden{
 	    display: none !important;
     }
     
+    .mobile-toggle{
+	    display: none;
+    }
+    
     .section-wrap{
 	    padding-top: 50px;
+	    height: 100vh;
+		position: fixed;
     }
     
     .slide-bcg{
@@ -1236,16 +1307,20 @@ div#contact .slide-bcg form{
 	    min-width: 0;
 	    border-radius: 0;
 	    padding-top: 20px;
+	    overflow-y: scroll;
+	    background: var(--dark-color);
     }
     
     .flexbox-booking{
 	    flex-direction: column;
 	    min-width: 0;
+	    margin-bottom: 80px;
     }
     
     .flexbox-booking2{
 	    flex-direction: column;
 	    min-width: 0;
+	    margin-bottom: 80px;
     }
     
     .icon-bcg{
@@ -1280,6 +1355,17 @@ div#contact .slide-bcg form{
 	    margin: 0;
 	    color: var(--darkmode-text-color);
 	    text-align: center;
+    }
+    
+    .bottom-mobile-bar{
+	    height: 80px;
+		position: fixed;
+		background: #1e1e1e;
+		width: 100%;
+		bottom: 0;
+		box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.5);
+		border-top: 2px solid #303030;
+		z-index: 90;
     }
     
     
