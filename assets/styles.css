@@ -1045,6 +1045,8 @@ div#contact .slide-bcg form{
 
 
 @media only screen and (max-width: 768px) {
+
+ /* ---------------------- LANDING MOBILE ----------------------- */   
 	
 	.top-bar{
 		padding: 0;
@@ -1103,8 +1105,70 @@ div#contact .slide-bcg form{
         overflow-x: hidden;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". article1 ." 
+        "image image image" 
+        "article2 article2 article2" 
+        ". article3 ." 
+        "break1 break1 break1" 
+        " slideshow2 slideshow2  slideshow2" 
+        ". article4 ."
+        "break2 break2 break2" 
+    }
 
-  /*mobile nav */
+.item-c ul {
+    padding: 10%;
+}
+
+.item-c ul li , .item-d ul li {
+   font-size: 15px;
+   line-height: 2;
+}
+
+.slideshow-container2 img {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.numbertext {
+    position: relative;
+}
+
+/* ---------------------- Studio - Mobile ----------------------- */ 
+.grid-container-std {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image " 
+    "article1 " 
+    " article2 " 
+    " footer"
+}
+
+.green-b {
+    display: block;
+}
+.top-bar{
+    padding: 0;
+}
+
+.burger{
+    display: block;
+    cursor: pointer;
+}
+
+.top-bar nav ul{
+    display: none;
+}
+
+
+  /* ---------------------- Nav - Mobile ----------------------- */ 
 
 	.top-bar-language {
 	    display: flex;
@@ -1210,7 +1274,7 @@ div#contact .slide-bcg form{
 	}
 	
 	
-	/*mobile nav */
+	 /* ---------------------- Nav - Mobile ----------------------- */ 
 	
 	.top-bar-language {
 	display: flex;
@@ -1365,7 +1429,60 @@ div#contact .slide-bcg form{
         margin: 0;
         width: 100%;
     }
+
+/* ---------------------- Footer - Mobile ----------------------- */ 
+
+.footer {
+    display: block;
   
+}
+
+.foot-info {
+    margin: 10px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.foot-logo {
+    height: 15vh;
+    width: 15vh;
+}
+
+.footer h2 {
+    margin-top: 0;
+}
+.footer p {
+    margin-bottom: 0;
+}
+
+.footer h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.end-section {
+    padding-top: 5%;
+}
+
+.contact-flex1 {
+display: flex;
+}
+.contact-container1 {
+    width:30vh;
+}
+
+.contact-container2 {
+    width: 30vh;
+    
+}
+.contact-container2 p, .contact-container1 p{
+    font-size: 10px;
+}
+
+.contact-container1 , .contact-container2 h3 {
+    font-size: 15px;
+}
     /* ---------------------- Booking Form - Mobile ----------------------- */
 	
 	.desktop-hidden{
@@ -1560,3 +1677,4 @@ div#contact .slide-bcg form{
 	}
 
 }
+
