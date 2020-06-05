@@ -33,7 +33,6 @@ let previousSlide = 0;
 
 let windowCount = 0;
 let nextSlide = 0;
-let wasClicked = false;
 
 function redirectMe(){
 	window.location.href = 'index.html';
@@ -47,6 +46,7 @@ function redirectMe(){
 let clickCount = [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let service = {};
 
+// Studio selection
 
 for (let i = 0; i < icon1.length; i++){
 	icon1[i].addEventListener("click", function(){
@@ -85,6 +85,9 @@ for (let i = 0; i < icon1.length; i++){
 		console.log(selectedItem)
 	});
 }
+
+
+// Tech selection
 
 for (let i = 0; i < icon2.length; i++){
 	icon2[i].addEventListener("click", function(){
@@ -247,7 +250,162 @@ next.addEventListener("click", function(){
 		nextSlide.scrollIntoView();
 		windowCount = windowCount + 1;
 	};
+	if(nextSlide == slide6){
+		summaryContent();
+	}
 });
+
+
+const fStudio = document.getElementById("studio-final");
+const fTech = document.getElementById("tech-final");
+
+let studioText = 0;
+let techText = 0;
+
+function summaryContent(){
+	if(clickCount[0] % 2 == 0){
+		if(studioText === 0){
+			studioText = "Virtual studio" + `<br>`;
+		}
+		else{
+			studioText = studioText + " " + "Virtual studio" + `<br>`;
+		}
+		fStudio.innerHTML = studioText;
+	};
+	
+	if(clickCount[1] % 2 == 0){
+		if(studioText === 0){
+			studioText = "Chroma studio" + `<br>`;
+		}
+		else{
+			studioText = studioText + " " + "Chroma studio" + `<br>`;
+		}
+		fStudio.innerHTML = studioText;
+	};
+	
+	if(clickCount[2] % 2 == 0){
+		if(studioText === 0){
+			studioText = "Mixed studio" + `<br>`;
+		}
+		else{
+			studioText = studioText + " " + "Mixed studio" + `<br>`;
+		}
+		fStudio.innerHTML = studioText;
+	};
+	console.log(studioText)
+	
+	
+	//Technologies
+	
+	if(clickCount[4] % 2 == 0){
+		if(techText === 0){
+			techText = "AR" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[5] % 2 == 0){
+		if(techText === 0){
+			techText = "AR2" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR2" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[6] % 2 == 0){
+		if(techText === 0){
+			techText = "AR3" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR3" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[7] % 2 == 0){
+		if(techText === 0){
+			techText = "AR4" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR4" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[8] % 2 == 0){
+		if(techText === 0){
+			techText = "AR5" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR5" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[9] % 2 == 0){
+		if(techText === 0){
+			techText = "AR6" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR6" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	}
+	
+	if(clickCount[10] % 2 == 0){
+		if(techText === 0){
+			techText = "AR7" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR7" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[11] % 2 == 0){
+		if(techText === 0){
+			techText = "AR8" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR8" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[12] % 2 == 0){
+		if(techText === 0){
+			techText = "AR9" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR9" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	};
+	
+	if(clickCount[13] % 2 == 0){
+		if(techText === 0){
+			techText = "AR10" + `<br>`;
+		}
+		else{
+			techText = techText + " " + "AR10" + `<br>`;
+		}
+		fTech.innerHTML = techText;
+	}
+
+}
+
+
+
+
+
+
+
+
 
 
 

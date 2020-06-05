@@ -422,6 +422,7 @@ p {
 	min-height: 130px;
 	margin: 0 auto 30px;
 	transition: ease-in-out .05s;
+	position: relative;
 }
 
 .icon-bcg3:hover {
@@ -533,6 +534,26 @@ div.icon-container .icon-bcg3:nth-child(10){
 	margin: 5% auto;
 }
 
+.icon6{
+	background: url("icons/ar-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+	width: 80%;
+	margin: 5% auto;
+}
+
+.icon7{
+	background: url("icons/va-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+	width: 80%;
+	margin: 5% auto;
+}
+
 
 .selected-icon{
 	border: 5px solid var(--purple-color);
@@ -611,6 +632,18 @@ div#summary .slide-bcg h2{
     font-size: 2vw;
     padding-bottom: 20px;
     margin: 0;
+}
+
+.icon-bcg3 h3 {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-align: left;
+    font-size: 2vw;
+    padding-bottom: 20px;
+    margin: 0;
+    position: absolute;
+	bottom: 0;
+	padding: 6%;
 }
 
 .form-container{
@@ -1629,7 +1662,7 @@ display: flex;
 	}
 	
 	.icon-bcg3 h3{
-		font-size: 22px;
+		font-size: 17px;
 	}
     
     h4{
@@ -1639,7 +1672,7 @@ display: flex;
     }
     
     .bottom-mobile-bar{
-	    height: 80px;
+	    height: 65px;
 		position: fixed;
 		background: #1e1e1e;
 		width: 100%;
@@ -1652,7 +1685,7 @@ display: flex;
     .bottom-mobile-bar .button{
 		width: 40%;
 		height: 40px;
-		margin: 18px auto 0;
+		margin: 12px auto 0;
 		font-size: 24px;
 		padding-top: 4px;
 		text-align: center;
@@ -1663,9 +1696,19 @@ display: flex;
 	    width: 30%;
 		display: block;
 		position: absolute;
-		top: 13px;
+		top: 5px;
 		padding-left: 27px;
 		cursor: pointer;
+    }
+    
+    .bottom-mobile-bar p.skip{
+	    width: 50%;
+		display: block;
+		position: absolute;
+		top: 5px;
+		padding-left: 27px;
+		cursor: pointer;
+		right: 27px;
     }
     
     .bottom-mobile-bar p#back-mobile:hover{
@@ -1675,6 +1718,7 @@ display: flex;
     div#date .slide-bcg form, div#contact .slide-bcg form{
 	    width: 80%;
 	    margin-bottom: 120px;
+	    height: auto;
     }
     
     
