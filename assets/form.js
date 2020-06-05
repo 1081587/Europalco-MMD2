@@ -47,6 +47,7 @@ function redirectMe(){
 let clickCount = [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let service = {};
 
+// Studio selection
 
 for (let i = 0; i < icon1.length; i++){
 	icon1[i].addEventListener("click", function(){
@@ -85,6 +86,9 @@ for (let i = 0; i < icon1.length; i++){
 		console.log(selectedItem)
 	});
 }
+
+
+// Tech selection
 
 for (let i = 0; i < icon2.length; i++){
 	icon2[i].addEventListener("click", function(){
