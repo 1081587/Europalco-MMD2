@@ -84,7 +84,7 @@ backBtn.addEventListener("click", function(){
 		windowCount = windowCount - 1;
 		counter();
 		nextSlide.classList.toggle("mobile-toggle");
-		previousSlide.classList.toggle("mobile-toggle");
+		previousSlide.classList.remove("mobile-toggle");
 		previousSlide.scrollIntoView();
 	};
 })
