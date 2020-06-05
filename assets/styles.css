@@ -1187,16 +1187,23 @@ div#contact .slide-bcg form{
     position: relative;
 }
 
+
+
 /* ---------------------- Studio - Mobile ----------------------- */ 
 .grid-container-std {
+    
+    width: 100%;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: auto;
     grid-template-areas: 
-    "image " 
-    "article1 " 
-    " article2 " 
-    " footer"
+    " image image image " 
+    ". article1 . " 
+    " . article2 . " 
+    " . footer . "
+    " image2 image2 image2 "
+    " image2 image2 image2 "
+    " image2 image2 image2 ";
 }
 
 .green-b {
@@ -1214,6 +1221,20 @@ div#contact .slide-bcg form{
 .top-bar nav ul{
     display: none;
 }
+
+.std-image {
+    margin: 0;
+    grid-area: "std-image2" ;
+}
+
+.green-a  {
+    padding: 0;
+}
+
+.std-image2 {
+    margin:0;
+}
+
 
 
   /* ---------------------- Nav - Mobile ----------------------- */ 
