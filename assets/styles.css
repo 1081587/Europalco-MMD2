@@ -997,7 +997,88 @@ div#contact .slide-bcg form{
     line-height: 1.6;
 }
 
+/* ---------------------- TECHS ----------------------- */
 
+.grid-container-tech {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    " article1 image"  
+    " article2 article2" 
+    " footer footer"
+
+}
+
+.grid-container-tech {
+    background: var(--foreground-translucent-black);
+    height: 1000px;
+    margin: 7vw auto;
+    width: 83vw;
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
+}
+
+.grid-container-tech p{
+    margin-top: 80px;
+}
+
+#book-std {
+    width: 150px;
+    height: 100%;
+    font-size: 16px;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+#book-std a {
+    text-decoration: none;
+    color: black;
+    line-height: 2.5;
+}
+
+.tech-a{
+    grid-area: article1;
+    padding: 2.5vw;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.tech-b{
+    display: flex;
+}
+
+.tech-image {
+    grid-area: image;
+    margin: 200px 40px 10px 20px;
+    background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.tech-image3 {
+    grid-area: image2;
+    background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    height: 250px;
+    width: 400px;
+}
+
+.tech-b {
+    grid-area: article2;
+    height: 400px;
+    background-color: var(--foreground-color);
+    padding: 2.5vw;
+    font-size: 19px;
+    line-height: 1.6;
+}
 
 
 
