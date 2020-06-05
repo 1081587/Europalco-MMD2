@@ -1437,6 +1437,11 @@ div#contact .slide-bcg form{
 		position: absolute;
 		top: 13px;
 		padding-left: 27px;
+		cursor: pointer;
+    }
+    
+    .bottom-mobile-bar p#back-mobile:hover{
+	    text-decoration: underline !important;
     }
     
     div#date .slide-bcg form{
