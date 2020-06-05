@@ -417,7 +417,7 @@ p {
 	display: block;
 	min-width: 130px;
 	min-height: 130px;
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
 }
 
 .icon-bcg3:hover {
@@ -425,6 +425,59 @@ p {
     background: #ffe759;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
 }
+
+div.icon-container{
+	display: grid;
+	width: 100%;
+	padding: 0 3%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "icon1 icon2 icon3 icon4 icon5"
+    "icon6 icon7 icon8 icon9 icon10"
+}
+
+div.icon-container .icon-bcg3:nth-child(1){
+	grid-area: icon1;
+}
+
+div.icon-container .icon-bcg3:nth-child(2){
+	grid-area: icon2;
+}
+
+div.icon-container .icon-bcg3:nth-child(3){
+	grid-area: icon3;
+}
+
+div.icon-container .icon-bcg3:nth-child(4){
+	grid-area: icon4;
+}
+
+div.icon-container .icon-bcg3:nth-child(5){
+	grid-area: icon5;
+}
+
+div.icon-container .icon-bcg3:nth-child(6){
+	grid-area: icon6;
+}
+
+div.icon-container .icon-bcg3:nth-child(7){
+	grid-area: icon7;
+}
+
+div.icon-container .icon-bcg3:nth-child(8){
+	grid-area: icon8;
+}
+
+div.icon-container .icon-bcg3:nth-child(9){
+	grid-area: icon9;
+}
+
+div.icon-container .icon-bcg3:nth-child(10){
+	grid-area: icon10;
+}
+
+
 
 .icon1{
 	background: url("icons/studios-icon.svg");
@@ -1329,8 +1382,10 @@ div#contact .slide-bcg form{
     
     .icon-bcg2{
 	    width: 180px;
-	    height: 180px;
-	    margin: 0 auto;
+		height: 180px;
+		margin: 0 auto 20px;
+		min-height: 0;
+		min-width: 0;
     }
     
     .bottom-bar{
@@ -1388,8 +1443,36 @@ div#contact .slide-bcg form{
 	    width: 80%;
     }
     
+/*
+    .icon-container{
+	    display: block;
+		height: 100%;
+		width: 100%;
+		padding: 0 10px;
+    }
+*/
     
+    div.icon-container{
+	display: grid;
+	min-width: 320px;
+	max-width: 96%;
+	padding: 0 3%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "icon1 icon2"
+    "icon3 icon4"
+    "icon5 icon6"
+    "icon7 icon8"
+    "icon9 icon10";
+    margin: 0 auto 80px;
+}
     
+    .icon-bcg3{
+	    margin: 0 auto 20px;
+	    width: 40vw;
+		height: 40vw
+    }
     
 }
 
