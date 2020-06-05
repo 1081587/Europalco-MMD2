@@ -379,6 +379,7 @@ p {
 	text-decoration: none;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
 	display: block;
+	transition: ease-in-out .05s;
 }
 
 .icon-bcg:hover {
@@ -398,12 +399,14 @@ p {
 	display: block;
 	min-width: 240px;
 	min-height: 240px;
+	transition: ease-in-out .05s;
 }
 
 .icon-bcg2:hover {
     /* 	background: var(--purple-color); */
     background: #ffe759;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
+    transition: ease-in-out .05s;
 }
 
 .icon-bcg3{
@@ -418,6 +421,7 @@ p {
 	min-width: 130px;
 	min-height: 130px;
 	margin: 0 auto 30px;
+	transition: ease-in-out .05s;
 }
 
 .icon-bcg3:hover {
@@ -532,6 +536,9 @@ div.icon-container .icon-bcg3:nth-child(10){
 
 .selected-icon{
 	border: 5px solid var(--purple-color);
+	transition: ease-in-out .05s;
+	background: #ffe759;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.9);
 }
 
 div.bottom-bar {
