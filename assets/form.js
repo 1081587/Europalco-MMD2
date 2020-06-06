@@ -209,6 +209,7 @@ tech.addEventListener("click", function(){
 
 backBtn.addEventListener("click", function(){
 	counter();	
+	dateDelete();
 	if(windowCount == 1){
 		backBtn.classList.toggle("mobile-toggle");
 		skip1.classList.toggle("mobile-toggle");
@@ -230,7 +231,6 @@ backBtn.addEventListener("click", function(){
 })
 
 next.addEventListener("click", function(){
-	document.getElementById('fstudio').value = selectedItem[0];
 	counter();
 	console.log(nextSlide)
 	console.log(windowCount)
@@ -253,6 +253,9 @@ next.addEventListener("click", function(){
 		nextSlide.scrollIntoView();
 		windowCount = windowCount + 1;
 	};
+	if(nextSlide == slide4){
+		dates();
+	}
 	if(nextSlide == slide6){
 		fStudio.innerHTML = 0;
 		summaryContent();
@@ -429,6 +432,58 @@ function countdown() {
     seconds -= 1;
     message.innerText = "You're being redirected to the home page. " + seconds;
 }
+
+
+
+
+
+
+// 	document.getElementById('fstudio').value = selectedItem[0];
+
+
+let dateForm = document.getElementById('dateForm');
+
+
+function dates(){
+	let dateItems = selectedItem.concat(selectedTech); // An array of services + studios
+
+	for(let i = 0; i < dateItems.length; i++){
+		dateForm.innerHTML +=  //selects an HTML object to insert a new HTML to
+		`
+		<label>Date #${i+1}:</label>
+		<input type="date" id="fdate" name="fdate"><br><br>
+		<input id="fstudio${i}" type="text" id="fname" name="fname" placeholder="Virtual studio"><br><br>
+		`	
+	}
+	for(let i = 0; i < dateItems.length; i++){
+		document.getElementById('fstudio' + (i)).value = dateItems[i]; // fstudio1 -> value 2nd in date
+		console.log(dateItems);
+	}
+}
+
+function dateDelete(){
+	dateForm.innerHTML = "";
+}
+	
+/*
+
+	`
+	<h3>${data.title}</h3>  
+	<p>${data.explanation}</p>
+	<a id="copyright" href="${data.url}" target="_blank"></a>
+	`
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
