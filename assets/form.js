@@ -210,6 +210,7 @@ tech.addEventListener("click", function(){
 backBtn.addEventListener("click", function(){
 	counter();	
 	dateDelete();
+	formDelete();
 	if(windowCount == 1){
 		backBtn.classList.toggle("mobile-toggle");
 		skip1.classList.toggle("mobile-toggle");
@@ -259,6 +260,7 @@ next.addEventListener("click", function(){
 	if(nextSlide == slide6){
 		fStudio.innerHTML = 0;
 		summaryContent();
+		formFill();
 
 	}
 });
@@ -476,9 +478,26 @@ function dateDelete(){
 
 
 
+let name = document.getElementById("fname");
+let mail = document.getElementById("fmail");
+let fmsg = document.getElementById("fmsg");
+
+let yourName = document.getElementById("yourname");
+let yourMail = document.getElementById("yourmail");
+let yourMsg = document.getElementById("yourmsg");
 
 
+function formFill(){
+	yourName.innerHTML = name.value;
+	yourMail.innerHTML = mail.value;
+	yourMsg.innerHTML = fmsg.value;
+}
 
+function formDelete(){
+	yourName.innerHTML = "";
+	yourMail.innerHTML = "";
+	yourMsg.innerHTML = "";
+}
 
 
 
