@@ -844,6 +844,8 @@ h2.last-note{
 
 
 
+
+
 /* ---------------------- GRID TEMPLATE DESKTOP ----------------------- */
 
 .grid-container {
@@ -1879,6 +1881,10 @@ display: flex;
 	    padding: 0 5%;
 	    margin-top: 50px;
 	    margin-bottom: 30%;
+	}
+	
+	p{
+		overflow-x: hidden;
 	}
 	
     

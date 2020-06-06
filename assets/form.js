@@ -29,6 +29,7 @@ var width = window.innerWidth;
 
 const next = document.getElementById("next");
 const skip1 = document.getElementById("skip1");
+const skip2 = document.getElementById("skip2");
 
 
 let previousSlide = 0;
@@ -211,6 +212,7 @@ backBtn.addEventListener("click", function(){
 	counter();	
 	dateDelete();
 	formDelete();
+	next.innerHTML = 'Next step';
 	if(windowCount == 1){
 		backBtn.classList.toggle("mobile-toggle");
 		skip1.classList.toggle("mobile-toggle");
@@ -253,23 +255,27 @@ next.addEventListener("click", function(){
 		nextSlide.scrollIntoView();
 		windowCount = windowCount + 1;
 		dates();
+		skip2.classList.remove("mobile-toggle");
 	}
 	else if(nextSlide == end){
 		bottomBar.classList.toggle("mobile-toggle");
 		nextSlide.classList.toggle("mobile-toggle");
+		skip2.classList.add("mobile-toggle");
 		nextSlide.scrollIntoView();
-// 		setTimeout(redirectMe, 10000);
+		setTimeout(redirectMe, seconds * 1000);
 		setInterval(countdown, 1000);
 	}
 	else{
 		nextSlide.classList.toggle("mobile-toggle");
 		nextSlide.scrollIntoView();
+		skip2.classList.add("mobile-toggle");
 		windowCount = windowCount + 1;
 	};
 	if(nextSlide == slide6){
 		fStudio.innerHTML = 0;
 		summaryContent();
 		formFill();
+		next.innerHTML = 'Submit';
 
 	}
 });
@@ -282,7 +288,15 @@ skip1.addEventListener("click", function(){
 	backBtn.classList.toggle("mobile-toggle");
 	previousSlide = slide1;
 	windowCount = 3;
-})
+});
+
+skip2.addEventListener("click", function(){
+	counter();
+	nextSlide.classList.toggle("mobile-toggle");
+	nextSlide.scrollIntoView();
+	windowCount = windowCount + 1;
+	skip2.classList.add("mobile-toggle");
+});
 
 
 const fStudio = document.getElementById("studio-final");
@@ -292,143 +306,6 @@ let studioText = 0;
 let techText = 0;
 
 function summaryContent(){
-/*
-	if(clickCount[0] % 2 == 0){
-		if(studioText === 0){
-			studioText = "Virtual studio" + `<br>`;
-		}
-		else{
-			studioText = studioText + " " + "Virtual studio" + `<br>`;
-		}
-		fStudio.innerHTML = studioText;
-	};
-	
-	if(clickCount[1] % 2 == 0){
-		if(studioText === 0){
-			studioText = "Chroma studio" + `<br>`;
-		}
-		else{
-			studioText = studioText + " " + "Chroma studio" + `<br>`;
-		}
-		fStudio.innerHTML = studioText;
-	};
-	
-	if(clickCount[2] % 2 == 0){
-		if(studioText === 0){
-			studioText = "Mixed studio" + `<br>`;
-		}
-		else{
-			studioText = studioText + " " + "Mixed studio" + `<br>`;
-		}
-		fStudio.innerHTML = studioText;
-	};
-	console.log(studioText)
-	
-	
-	//Technologies
-	
-	if(clickCount[4] % 2 == 0){
-		if(techText === 0){
-			techText = "AR" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[5] % 2 == 0){
-		if(techText === 0){
-			techText = "AR2" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR2" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[6] % 2 == 0){
-		if(techText === 0){
-			techText = "AR3" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR3" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[7] % 2 == 0){
-		if(techText === 0){
-			techText = "AR4" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR4" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[8] % 2 == 0){
-		if(techText === 0){
-			techText = "AR5" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR5" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[9] % 2 == 0){
-		if(techText === 0){
-			techText = "AR6" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR6" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	}
-	
-	if(clickCount[10] % 2 == 0){
-		if(techText === 0){
-			techText = "AR7" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR7" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[11] % 2 == 0){
-		if(techText === 0){
-			techText = "AR8" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR8" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[12] % 2 == 0){
-		if(techText === 0){
-			techText = "AR9" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR9" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	};
-	
-	if(clickCount[13] % 2 == 0){
-		if(techText === 0){
-			techText = "AR10" + `<br>`;
-		}
-		else{
-			techText = techText + " " + "AR10" + `<br>`;
-		}
-		fTech.innerHTML = techText;
-	}
-*/
-	
-	
 	function showStudio() {	
 		let itemString = selectedItem.toString();
 		let items = itemString.split(",");
@@ -440,7 +317,6 @@ function summaryContent(){
 		let items = itemString.split(",");
 		fTech.innerHTML = items.join(`<br>`);
 	};
-
 showStudio();      
 showTech(); 
 }
@@ -488,15 +364,6 @@ function dateDelete(){
 	}
 }
 	
-/*
-
-	`
-	<h3>${data.title}</h3>  
-	<p>${data.explanation}</p>
-	<a id="copyright" href="${data.url}" target="_blank"></a>
-	`
-*/
-
 
 
 let name = document.getElementById("fname");
