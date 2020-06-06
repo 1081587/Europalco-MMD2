@@ -245,7 +245,7 @@ next.addEventListener("click", function(){
 		bottomBar.classList.toggle("mobile-toggle");
 		nextSlide.classList.toggle("mobile-toggle");
 		nextSlide.scrollIntoView();
-		setTimeout(redirectMe, 10000);
+// 		setTimeout(redirectMe, 10000);
 		setInterval(countdown, 1000);
 	}
 	else{
