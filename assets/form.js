@@ -13,6 +13,8 @@ const icon2 = document.getElementsByClassName("icon-bcg3");
 
 
 const selectedItem = [];
+const selectedTech = [];
+
 
 const backBtn = document.getElementById("back-mobile");
 
@@ -96,15 +98,15 @@ for (let i = 0; i < icon2.length; i++){
 		function iconSelector(){
 			if(clickCount[i + 4] % 2 == 0){
 				console.log(clickCount[i + 4])
-				for(let i = selectedItem.length - 1; i >= 0; i--) {
-				    if(selectedItem[i] == service) {
-				        selectedItem.splice(i, 1);
+				for(let i = selectedTech.length - 1; i >= 0; i--) {
+				    if(selectedTech[i] == service) {
+				        selectedTech.splice(i, 1);
 				    }
 				}
 			}
 			else{
 				console.log(clickCount)
-				selectedItem.push(service);
+				selectedTech.push(service);
 			}
 		}
 	
@@ -244,6 +246,7 @@ next.addEventListener("click", function(){
 		nextSlide.classList.toggle("mobile-toggle");
 		nextSlide.scrollIntoView();
 		setTimeout(redirectMe, 10000);
+		setInterval(countdown, 1000);
 	}
 	else{
 		nextSlide.classList.toggle("mobile-toggle");
@@ -251,7 +254,9 @@ next.addEventListener("click", function(){
 		windowCount = windowCount + 1;
 	};
 	if(nextSlide == slide6){
+		fStudio.innerHTML = 0;
 		summaryContent();
+
 	}
 });
 
@@ -263,6 +268,7 @@ let studioText = 0;
 let techText = 0;
 
 function summaryContent(){
+/*
 	if(clickCount[0] % 2 == 0){
 		if(studioText === 0){
 			studioText = "Virtual studio" + `<br>`;
@@ -396,11 +402,33 @@ function summaryContent(){
 		}
 		fTech.innerHTML = techText;
 	}
+*/
+	
+	
+	function showStudio() {	
+		let itemString = selectedItem.toString();
+		let items = itemString.split(",");
+		fStudio.innerHTML = items.join(`<br>`);
+	};
+	
+	function showTech() {	
+		let itemString = selectedTech.toString();
+		let items = itemString.split(",");
+		fTech.innerHTML = items.join(`<br>`);
+	};
 
+showStudio();      
+showTech(); 
 }
 
 
+let seconds = 10;
+let message = document.getElementsByClassName('redirect-msg')[0];
 
+function countdown() {
+    seconds -= 1;
+    message.innerText = "You're being redirected to the home page. " + seconds;
+}
 
 
 
