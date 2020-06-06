@@ -218,6 +218,16 @@ backBtn.addEventListener("click", function(){
 		previousSlide.classList.toggle("mobile-toggle");
 		slide1.classList.toggle("mobile-toggle");
 		slide1.scrollIntoView();
+		dateDelete();
+		formDelete();
+	}
+	else if(previousSlide == slide1){
+		windowCount = 1;
+		slide1.classList.remove("mobile-toggle");
+		slide5.classList.add("mobile-toggle");
+		next.classList.toggle("mobile-toggle");
+		skip1.classList.toggle("mobile-toggle");
+		backBtn.classList.toggle("mobile-toggle");
 	}
 	else{
 		console.log(nextSlide) //contact
@@ -228,19 +238,21 @@ backBtn.addEventListener("click", function(){
 		nextSlide.classList.toggle("mobile-toggle");
 		previousSlide.classList.remove("mobile-toggle");
 		previousSlide.scrollIntoView();
+		
 	};
 })
 
 next.addEventListener("click", function(){
 	counter();
 	console.log(nextSlide)
-	console.log(windowCount)
+	console.log("window count = " + windowCount)
 	if(nextSlide == slide4){
 		nextSlide.classList.toggle("mobile-toggle");
 		slide2.classList.add("mobile-toggle");
 		slide3.classList.add("mobile-toggle");
 		nextSlide.scrollIntoView();
 		windowCount = windowCount + 1;
+		dates();
 	}
 	else if(nextSlide == end){
 		bottomBar.classList.toggle("mobile-toggle");
@@ -254,9 +266,6 @@ next.addEventListener("click", function(){
 		nextSlide.scrollIntoView();
 		windowCount = windowCount + 1;
 	};
-	if(nextSlide == slide4){
-		dates();
-	}
 	if(nextSlide == slide6){
 		fStudio.innerHTML = 0;
 		summaryContent();
@@ -264,6 +273,16 @@ next.addEventListener("click", function(){
 
 	}
 });
+
+skip1.addEventListener("click", function(){
+	slide1.classList.toggle("mobile-toggle");
+	slide5.classList.toggle("mobile-toggle");
+	skip1.classList.toggle("mobile-toggle");
+	next.classList.toggle("mobile-toggle");
+	backBtn.classList.toggle("mobile-toggle");
+	previousSlide = slide1;
+	windowCount = 3;
+})
 
 
 const fStudio = document.getElementById("studio-final");
@@ -464,7 +483,9 @@ function dates(){
 }
 
 function dateDelete(){
-	dateForm.innerHTML = "";
+	if(windowCount == 2){
+		dateForm.innerHTML = "";
+	}
 }
 	
 /*
@@ -491,6 +512,9 @@ function formFill(){
 	yourName.innerHTML = name.value;
 	yourMail.innerHTML = mail.value;
 	yourMsg.innerHTML = fmsg.value;
+	yourMsg.addEventListener("click", function(){
+		alert(windowCount)
+	})
 }
 
 function formDelete(){
