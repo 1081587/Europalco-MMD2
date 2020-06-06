@@ -275,7 +275,7 @@ next.addEventListener("click", function(){
 		fStudio.innerHTML = 0;
 		summaryContent();
 		formFill();
-		next.innerHTML = 'Submit';
+		next.innerHTML = 'Send';
 
 	}
 });
