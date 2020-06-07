@@ -86,10 +86,10 @@ html, body {
 }
 
 .arrow-down {
-    background: url("icons/arrow-down.svg");
+    background: url(icons/arrow-down.svg);
     background-size: 40%;
     background-repeat: no-repeat;
-    background-position: 15px 9px;
+    background-position: 8px 6px;
     width: 30px;
     height: 30px;
     float: right;
@@ -931,18 +931,20 @@ h2.last-note{
 
 .section-break {
     grid-area: break1;
+    margin: 8vw 0;
 }
 
 .section-break2 {
     grid-area: break2;
+    margin: 8vw 0 0 0;
 }
 
 .section-break, .section-break2 {
     background: var(--primary-color);
     width: 100%;
     height: 13px;
-    margin-top: 6vw;
 }
+
 
 .item-d {
     grid-area: article4;
@@ -952,12 +954,11 @@ h2.last-note{
 
 .slideshow-container2 {
     grid-area: slideshow2;
+    position: relative;
 }
 
 .slideshow-container2 img {
     width: 100%;
-    margin-top: 135px;
-    margin-bottom: 50px;
 }
 
 /* ---------------------- SLIDESHOW ----------------------- */
@@ -969,7 +970,7 @@ h2.last-note{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 75%;
+    top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -995,7 +996,7 @@ h2.last-note{
     font-size: 14px;
     padding: 8px 12px;
     position: absolute;
-    top: 69%;
+    top: 1%;
 }
 
 .fade {
