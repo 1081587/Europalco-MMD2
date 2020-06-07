@@ -1304,13 +1304,14 @@ h2.last-note{
     ". article1 . " 
     " . article2 . " 
     " . footer . "
-    " image2 image2 image2 "
-    " image2 image2 image2 "
-    " image2 image2 image2 ";
+    " . image2 . "
+    " . image2 . "
+    " . image2 . ";
 }
 
 .green-b {
     display: block;
+    height: 800px;
 }
 .top-bar{
     padding: 0;
