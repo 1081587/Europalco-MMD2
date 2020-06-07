@@ -126,9 +126,9 @@ html, body {
     color: #171717;
 }
 
-.top-bar li a:hover {
+/*.top-bar li a:hover {
     text-decoration: underline;
-}
+}*/
 
 .top-bar li a {
     color: white;
@@ -1079,7 +1079,6 @@ h2.last-note{
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-    width: 100%;
 }
 
 .std-image2 {
@@ -1314,7 +1313,7 @@ h2.last-note{
 
 .green-b {
     display: block;
-    height: 800px;
+    height: 900px;
 }
 .top-bar{
     padding: 0;
@@ -1354,9 +1353,9 @@ h2.last-note{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 20px;
+    margin: 25px 0px;
     height: 250px;
-    width: 100vh;
+    width: 100%;
 }
 
 
