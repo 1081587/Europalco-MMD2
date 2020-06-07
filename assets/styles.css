@@ -108,10 +108,12 @@ html, body {
     top: -21px;
     position: relative;
     padding: 15px 1vw 0;
+    color: white;
 }
 
 .top-bar li:hover {
     background: var(--purple-color);
+    
 }
 
 .top-bar li.active {
@@ -123,7 +125,7 @@ html, body {
 }
 
 .top-bar li.active a {
-    color: #171717;
+    color: black;
 }
 
 .top-bar li a:hover {
@@ -150,13 +152,6 @@ html, body {
     color: white;
     padding: 0;
 }
-
-/*
-.top-bar li:nth-child(4) a:hover {
-    color: #fff;
-	background: #ffe759;
-}
-*/
 
 .top-bar ul {
     margin: 0;
@@ -222,15 +217,15 @@ html, body {
 .title-1 {
     background: #fff;
     color: var(--primary-color);
-    width: 580px;
-    height: 95px;
+    width: 543px;
+    height: 80px;
 }
 
 .title-2 {
     background: var(--primary-color);
     color: #fff;
     width: 450px;
-    height: 95px;
+    height: 80px;
     margin-top: 35px;
 }
 
@@ -287,7 +282,7 @@ margin: 0 auto;
 
 h1 {
     margin: 0 0 0 150px;
-    font-size: 64px;
+    font-size: 50px;
     padding-top: 8px;
     font-family: 'Basier Circle', helvetica, sans-serif;
 }
