@@ -1079,6 +1079,7 @@ h2.last-note{
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
+    width: 100%;
 }
 
 .std-image2 {
@@ -1331,7 +1332,6 @@ h2.last-note{
 .std-image {
     margin: 0;
     max-width: 100%; 
-    height: auto;
 }
 
 .green-a  {
