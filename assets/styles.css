@@ -86,10 +86,10 @@ html, body {
 }
 
 .arrow-down {
-    background: url("icons/arrow-down.svg");
+    background: url(icons/arrow-down.svg);
     background-size: 40%;
     background-repeat: no-repeat;
-    background-position: 15px 9px;
+    background-position: 8px 6px;
     width: 30px;
     height: 30px;
     float: right;
@@ -144,6 +144,11 @@ html, body {
     color: black;
     height: 100%;
     padding: 4px 0px;
+}
+
+.top-bar .nav-expanded li:nth-child(5) a {
+    color: white;
+    padding: 0;
 }
 
 /*
@@ -889,17 +894,6 @@ h2.last-note{
     border-top: 13px solid #ffda00;
 }
 
-.slideshow-container {
-    grid-area: slideshow1;
-    background: url(images/img1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    margin-top: 135px;
-    margin-bottom: 50px;
-}
-
 .item-c {
     grid-area: article3;
     font-size: 19px;
@@ -918,7 +912,6 @@ h2.last-note{
 
 #learn-more {
     width: 150px;
-    height: 100%;
     font-size: 16px;
     margin-top: 3vw;
     margin-left: 2vw;
@@ -931,18 +924,20 @@ h2.last-note{
 
 .section-break {
     grid-area: break1;
+    margin: 8vw 0;
 }
 
 .section-break2 {
     grid-area: break2;
+    margin: 8vw 0 0 0;
 }
 
 .section-break, .section-break2 {
     background: var(--primary-color);
     width: 100%;
     height: 13px;
-    margin-top: 6vw;
 }
+
 
 .item-d {
     grid-area: article4;
@@ -950,26 +945,33 @@ h2.last-note{
     line-height: 2.5;
 }
 
-.slideshow-container2 {
-    grid-area: slideshow2;
-}
-
-.slideshow-container2 img {
-    width: 100%;
+.slideshow-container1 {
+    grid-area: slideshow1;
+    position: relative;
     margin-top: 135px;
     margin-bottom: 50px;
 }
 
+.slideshow-container1 img, .slideshow-container2 img {
+    width: 100%;
+}
+
+.slideshow-container2 {
+    grid-area: slideshow2;
+    position: relative;
+}
+
+
 /* ---------------------- SLIDESHOW ----------------------- */
 
-.mySlides {
+.mySlides1, .mySlides2 {
     display: none;
 }
 
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 75%;
+    top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -995,7 +997,7 @@ h2.last-note{
     font-size: 14px;
     padding: 8px 12px;
     position: absolute;
-    top: 69%;
+    top: 1%;
 }
 
 .fade {
@@ -1068,9 +1070,6 @@ h2.last-note{
     line-height: 1.6;
 }
 
-.green-b{
-    display: flex;
-}
 
 .std-image {
     grid-area: image;
@@ -1095,6 +1094,7 @@ h2.last-note{
 
 .green-b {
     grid-area: article2;
+    display: flex;
     height: 400px;
     background-color: var(--foreground-color);
     padding: 2.5vw;
@@ -1558,8 +1558,10 @@ h2.last-note{
 	.nav-expandable {
 	display: flex;
 	margin: 0 auto;
-	justify-content: center;
+    justify-content: center;
+    color: white;
     }
+
     
 	.nav-mobile-final{
 	display: block;
