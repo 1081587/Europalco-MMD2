@@ -1330,7 +1330,8 @@ h2.last-note{
 
 .std-image {
     margin: 0;
-    grid-area: "std-image2" ;
+    max-width: 100%; 
+    height: auto;
 }
 
 .green-a  {
@@ -1339,8 +1340,24 @@ h2.last-note{
 
 .std-image2 {
     margin:0;
+    max-width: 100%; 
+    height: auto;
+    padding: 0;
+    margin:0;
 }
 
+
+
+.std-image2 {
+    grid-area: image2;
+    background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    height: 250px;
+    width: 100vh;
+}
 
 
   /* ---------------------- Nav - Mobile ----------------------- */ 
@@ -1617,7 +1634,7 @@ h2.last-note{
 .foot-info {
     margin: 10px 0 0 0;
     width: 100%;
-    text-align: center;
+    
 }
 
 
@@ -1638,12 +1655,12 @@ h2.last-note{
     margin-bottom: 5px;
 }
 
-.end-section {
-    padding-top: 5%;
-}
+
 
 .contact-flex1 {
 display: flex;
+padding: 3% 0% 3% 8%;
+
 }
 .contact-container1 {
     width:30vh;
@@ -1659,7 +1676,14 @@ display: flex;
 
 .contact-container1 , .contact-container2 h3 {
     font-size: 15px;
+    
 }
+
+.foot-info h2 {
+    padding-left: 8%;
+}
+
+
     /* ---------------------- Booking Form - Mobile ----------------------- */
 	
 	.desktop-hidden{
