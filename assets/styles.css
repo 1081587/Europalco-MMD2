@@ -996,9 +996,6 @@ div#contact .slide-bcg form{
     line-height: 1.6;
 }
 
-.green-b{
-    display: flex;
-}
 
 .std-image {
     grid-area: image;
@@ -1023,6 +1020,7 @@ div#contact .slide-bcg form{
 
 .green-b {
     grid-area: article2;
+    display: flex;
     height: 400px;
     background-color: var(--foreground-color);
     padding: 2.5vw;
