@@ -136,11 +136,11 @@ html, body {
     font-size: 16px;
 }
 
-.top-bar li:nth-child(4) {
+.top-bar li:nth-child(5) {
     background: none;
 }
 
-.top-bar li:nth-child(4) a {
+.top-bar li:nth-child(5) a {
     color: black;
     height: 100%;
     padding: 4px 0px;
