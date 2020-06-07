@@ -25,6 +25,86 @@ const tech = document.getElementById("tech-link");
 
 var width = window.innerWidth;
 
+let previousSlide = 0;
+
+let windowCount = 0;
+let nextSlide = 0;
+
+
+
+const studioNext = document.getElementById("studio-next");
+const techNext = document.getElementById("tech-next");
+const dateNext = document.getElementById("date-next");
+const summaryNext = document.getElementById("summary-next");
+
+const submitNext = document.getElementById("submit-next");
+
+
+const studioBack = document.getElementById("studio-back");
+const techBack = document.getElementById("tech-back");
+
+const dateBack = document.getElementById("date-back");
+
+
+
+studioNext.addEventListener("click", function(){
+	slide4.classList.add("desktop-toggle");
+	slide2.classList.remove("desktop-toggle");
+	dates();
+});
+
+techNext.addEventListener("click", function(){
+	slide4.classList.add("desktop-toggle");
+	slide3.classList.remove("desktop-toggle");
+	dates();
+});
+
+dateNext.addEventListener("click", function(){
+	slide5.classList.add("desktop-toggle");
+	slide4.classList.remove("desktop-toggle");
+});
+
+summaryNext.addEventListener("click", function(){
+	slide6.classList.add("desktop-toggle");
+	slide5.classList.remove("desktop-toggle");
+	formFill();
+	summaryContent();
+});
+
+submitNext.addEventListener("click", function(){
+	end.classList.add("desktop-toggle");
+	slide6.classList.remove("desktop-toggle");
+	setTimeout(redirectMe, seconds * 1000);
+	setInterval(countdown, 1000);
+});
+
+studioBack.addEventListener("click", function(){
+	slide1.classList.add("desktop-toggle");
+	slide2.classList.remove("desktop-toggle");
+	dateDelete();
+});
+
+techBack.addEventListener("click", function(){
+	slide1.classList.add("desktop-toggle");
+	slide2.classList.remove("desktop-toggle");
+	dateDelete();
+});
+
+dateBack.addEventListener("click", function(){
+	if(previousSlide == slide2){
+		slide4.classList.remove("desktop-toggle");
+		previousSlide.classList.add("desktop-toggle");
+	}
+	else if(previousSlide == slide3){
+		slide4.classList.remove("desktop-toggle");
+		previousSlide.classList.add("desktop-toggle");
+		previousSlide.scrollIntoView();	
+	};
+	windowCount = 2;
+	dateDelete();
+});
+
+
 
 
 const next = document.getElementById("next");
@@ -32,10 +112,7 @@ const skip1 = document.getElementById("skip1");
 const skip2 = document.getElementById("skip2");
 
 
-let previousSlide = 0;
 
-let windowCount = 0;
-let nextSlide = 0;
 
 function redirectMe(){
 	window.location.href = 'index.html';
@@ -188,7 +265,9 @@ function counter(){
 
 studio.addEventListener("click", function(){
 	slide1.classList.toggle("mobile-toggle");
+	slide1.classList.remove("desktop-toggle");
 	slide2.classList.toggle("mobile-toggle");
+	slide2.classList.add("desktop-toggle");
 	next.classList.toggle("mobile-toggle");
 	skip1.classList.toggle("mobile-toggle");
 	backBtn.classList.toggle("mobile-toggle");
@@ -199,7 +278,9 @@ studio.addEventListener("click", function(){
 
 tech.addEventListener("click", function(){
 	slide1.classList.toggle("mobile-toggle");
+	slide1.classList.remove("desktop-toggle");
 	slide3.classList.toggle("mobile-toggle");
+	slide3.classList.add("desktop-toggle");
 	next.classList.toggle("mobile-toggle");
 	skip1.classList.toggle("mobile-toggle");
 	backBtn.classList.toggle("mobile-toggle");

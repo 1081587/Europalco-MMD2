@@ -35,7 +35,7 @@ html {
 }
 
 html, body {
-    scroll-behavior: smooth;
+/*     scroll-behavior: smooth; */
     font-family: helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -334,13 +334,18 @@ p {
 
 /* ---------------------- STYLES BOOKING SLIDESHOW ----------------------- */
 
+
+.section-wrap.desktop-toggle{
+	display: block;
+}
+
 .section-wrap{
 	height: 800px;
 	width: 100%;
 /* 	background: red; */
-	display: block;
 	float: left;
 	padding-top: calc(50px + 3vw);
+	display: none;
 }
 
 .slide-bcg{
@@ -1702,6 +1707,7 @@ padding: 3% 0% 3% 8%;
 	    padding-top: 50px;
 	    height: 100vh;
 		position: fixed;
+		display: block;
     }
     
     .slide-bcg{
