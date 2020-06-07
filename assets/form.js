@@ -235,9 +235,11 @@ backBtn.addEventListener("click", function(){
 		console.log(nextSlide) //contact
 		console.log(previousSlide) //studio
 		console.log(windowCount) //2
+		
 		windowCount = windowCount - 1;
 		counter();
 		nextSlide.classList.toggle("mobile-toggle");
+		skip2.classList.add("mobile-toggle");
 		previousSlide.classList.remove("mobile-toggle");
 		previousSlide.scrollIntoView();
 		
@@ -246,7 +248,7 @@ backBtn.addEventListener("click", function(){
 
 next.addEventListener("click", function(){
 	counter();
-	console.log(nextSlide)
+	console.log("next slide = " + nextSlide)
 	console.log("window count = " + windowCount)
 	if(nextSlide == slide4){
 		nextSlide.classList.toggle("mobile-toggle");

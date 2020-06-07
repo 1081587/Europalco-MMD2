@@ -128,9 +128,9 @@ html, body {
     color: black;
 }
 
-.top-bar li a:hover {
+/*.top-bar li a:hover {
     text-decoration: underline;
-}
+}*/
 
 .top-bar li a {
     color: white;
@@ -1308,7 +1308,7 @@ h2.last-note{
 
 .green-b {
     display: block;
-    height: 800px;
+    height: 900px;
 }
 .top-bar{
     padding: 0;
@@ -1326,7 +1326,6 @@ h2.last-note{
 .std-image {
     margin: 0;
     max-width: 100%; 
-    height: auto;
 }
 
 .green-a  {
@@ -1349,9 +1348,9 @@ h2.last-note{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 20px;
+    margin: 25px 0px;
     height: 250px;
-    width: 100vh;
+    width: 100%;
 }
 
 
