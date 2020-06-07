@@ -889,17 +889,6 @@ h2.last-note{
     border-top: 13px solid #ffda00;
 }
 
-.slideshow-container {
-    grid-area: slideshow1;
-    background: url(images/img1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    margin-top: 135px;
-    margin-bottom: 50px;
-}
-
 .item-c {
     grid-area: article3;
     font-size: 19px;
@@ -952,18 +941,26 @@ h2.last-note{
     line-height: 2.5;
 }
 
+.slideshow-container1 {
+    grid-area: slideshow1;
+    position: relative;
+    margin-top: 135px;
+    margin-bottom: 50px;
+}
+
+.slideshow-container1 img, .slideshow-container2 img {
+    width: 100%;
+}
+
 .slideshow-container2 {
     grid-area: slideshow2;
     position: relative;
 }
 
-.slideshow-container2 img {
-    width: 100%;
-}
 
 /* ---------------------- SLIDESHOW ----------------------- */
 
-.mySlides {
+.mySlides1, .mySlides2 {
     display: none;
 }
 
