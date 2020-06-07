@@ -108,6 +108,7 @@
                 Next step
             </div>
             <p id="back-mobile" class="mobile-toggle">< Back</p>
+	            <p id="skip2" class="skip mobile-toggle">Skip ></p>
 		</div>
 
         <!-- ///////////////////////// FIRST SLIDE ///////////////////////// -->
@@ -174,7 +175,7 @@
 			<div class="slide-bcg">
 				<a  class="back mobile-hidden">< Back</a>
 				<h4 class="desktop-hidden">Step 2/5</h4>
-				<h2>Which studio?</h2>
+				<h2>Which technology?</h2>
 				<div class="icon-container">
 					<div class="icon-bcg3">
 						<div class="icon6"></div>
@@ -235,17 +236,11 @@
 				<h2>Choose your dates</h2>
 				<div class="form-container">
 					<form id="dateForm">
+<!--
 						<label>Date #1:</label>
 						<input type="date" id="fdate" name="fdate"><br><br>
 						<input id="fstudio" type="text" id="fname" name="fname" placeholder="Virtual studio"><br><br>
-						<label>Date #2:</label>
-						<input type="date" id="fdate" name="fdate"><br><br>
-						<input type="text" id="fname" name="fname" placeholder="Chroma studio"><br><br>
-						<label>Date #3:</label>
-						<input type="date" id="fdate" name="fdate"><br><br>
-						<input type="text" id="fname" name="fname" placeholder="Mixed"><br><br>
-<!-- 						<div class="bottom-shadow"></div> -->
-						
+-->
 					</form>
 					<div class="add-more">
 						<div class="cross"></div>
@@ -271,9 +266,9 @@
 				<h2>Contact us!</h2>
 				<div class="form-container">
 					<form>
-						<input type="text" id="fname" name="fname" placeholder="Name"><br><br>
-						<input type="text" id="fname" name="fname" placeholder="Email"><br><br>
-						<textarea name="message" placeholder="Additional details"></textarea>
+						<input id="fname" type="text" name="fname" placeholder="Name"><br><br>
+						<input id="fmail" type="text" name="fmail" placeholder="Email"><br><br>
+						<textarea id="fmsg" name="message" placeholder="Additional details"></textarea>
 					</form>
 					<p>See previous messages ></p>
 				</div>
@@ -303,15 +298,13 @@
 	                        <h3>Technology:</h3>
 	                        <p id="tech-final">None</p>
                         </div>
-                        <div class="tech-summary">
-                        </div>
                     </div>
                     <div class="summary-right">
                         <div class="service-summary">
 	                        <h3>Contact:</h3>
-	                        <p>None</p>
-	                        <p>None</p>
-	                        <p>None</p>
+	                        <p id="yourname">None</p>
+	                        <p id="yourmail">None</p>
+	                        <p id="yourmsg">None</p>
                         </div>
                     </div>
                 </div>
@@ -331,8 +324,13 @@
 		
 		<div id="end" class="section-wrap mobile-toggle">
 			<div class="slide-bcg">
-				<h2>Thank you for your inquiry!</h2>
+				<h2 class="last-note">Thank you for your inquiry!</h2>
+				<p class="msg"> You can expect to hear back from us within 3 working days.</p>
 				
+				<div class="button redirect-btn">
+                    <a href="index.html">Back to home page</a>
+                </div>
+				<p class="redirect-msg">You're being redirected to the home page. 10</p>
 				
 				
 				

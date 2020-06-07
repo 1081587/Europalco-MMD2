@@ -36,7 +36,7 @@ html {
 
 html, body {
     scroll-behavior: smooth;
-    font-family: 'Basier Circle', helvetica, sans-serif;
+    font-family: helvetica, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -136,11 +136,11 @@ html, body {
     font-size: 16px;
 }
 
-.top-bar li:nth-child(4) {
+.top-bar li:nth-child(5) {
     background: none;
 }
 
-.top-bar li:nth-child(4) a {
+.top-bar li:nth-child(5) a {
     color: black;
     height: 100%;
     padding: 4px 0px;
@@ -284,17 +284,24 @@ h1 {
     margin: 0 0 0 150px;
     font-size: 64px;
     padding-top: 8px;
+    font-family: 'Basier Circle', helvetica, sans-serif;
 }
 
 h2 {
     color: var(--darkmode-text-color);
     font-weight: 500;
     margin-bottom: 5px;
+    font-family: 'Basier Circle', helvetica, sans-serif;
+}
+
+h3{
+	font-family: 'Basier Circle', helvetica, sans-serif;
 }
 
 p {
     color: var(--darkmode-text-color);
     font-weight: 100;
+    line-height: 1.6;
 }
 
 .item-b p {
@@ -380,6 +387,7 @@ p {
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
 	display: block;
 	transition: ease-in-out .05s;
+	cursor: pointer;
 }
 
 .icon-bcg:hover {
@@ -400,6 +408,7 @@ p {
 	min-width: 240px;
 	min-height: 240px;
 	transition: ease-in-out .05s;
+	cursor: pointer;
 }
 
 .icon-bcg2:hover {
@@ -423,6 +432,7 @@ p {
 	margin: 0 auto 30px;
 	transition: ease-in-out .05s;
 	position: relative;
+	cursor: pointer;
 }
 
 .icon-bcg3:hover {
@@ -638,7 +648,7 @@ div#summary .slide-bcg h2{
     color: var(--dark-color);
     text-decoration: none;
     text-align: left;
-    font-size: 2vw;
+    font-size: 20px;
     padding-bottom: 20px;
     margin: 0;
     position: absolute;
@@ -771,6 +781,68 @@ div#contact .slide-bcg form{
 	float: right;
 	height: 100%;
 }
+
+p.msg{
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	font-size: 18px;
+	display: block;
+}
+
+p.redirect-msg{
+	width: 60%;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 40px;
+	left: 20%;
+}
+
+.redirect-btn{
+	margin: 0 auto;
+	width: 30%;
+	height: 50px;
+	font-size: 20px;
+	padding-top: 15px;
+	text-decoration: none;
+	position: absolute;
+	left: 35%;
+	bottom: 30%;
+	font-weight: 600;
+}
+
+div#end div.slide-bcg div.redirect-btn a{
+	text-decoration: none;
+	color: #070707;
+}
+
+.service-summary h3{
+	font-size: 24px;
+	margin: 0;
+	color: var(--primary-color);
+}
+
+p#yourname{
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+p#yourmail{
+	font-weight: 400;
+	font-size: 18px;
+	text-decoration: underline;
+	margin-top: 10px;
+}
+
+h2.last-note{
+	margin: 20% 0 70px;
+}
+
+
+
 
 
 
@@ -1685,7 +1757,7 @@ display: flex;
 		height: 40px;
 		margin: 12px auto 0;
 		font-size: 24px;
-		padding-top: 4px;
+		padding-top: 8px;
 		text-align: center;
 		cursor: pointer;
     }
@@ -1707,6 +1779,7 @@ display: flex;
 		padding-left: 27px;
 		cursor: pointer;
 		right: 27px;
+		text-align: right;
     }
     
     .bottom-mobile-bar p#back-mobile:hover{
@@ -1765,6 +1838,53 @@ display: flex;
 		font-size: 18px;
 		padding-left: 15px;
     }
+    
+    div#end div.slide-bcg h2{
+	    margin-top: 60px;
+		margin-bottom: 60px;
+    }
+    
+    div#end div.slide-bcg div.redirect-btn{
+	    margin: 70px auto 30px;
+    }
+    
+    .summary-container{
+	    overflow-y: visible;
+    }
+    
+    .summary-left{
+	    width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+    }
+    
+    .summary-right{
+	    width: 100%;
+		height: auto;
+		float: left;
+		margin-bottom: 150px;
+    }
+    
+    .redirect-btn{
+		width: 60%;
+		left: 20%;
+		font-size: 18px;
+		height: 45px;
+		padding-top: 14px;
+		bottom: 18%;
+	}
+    
+    div#end div.slide-bcg h2 {
+	    font-size: 30px;
+	    padding: 0 5%;
+	    margin-top: 50px;
+	    margin-bottom: 30%;
+	}
+	
+	p{
+		overflow-x: hidden;
+	}
+	
     
 }
 
