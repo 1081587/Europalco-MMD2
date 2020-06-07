@@ -108,10 +108,12 @@ html, body {
     top: -21px;
     position: relative;
     padding: 15px 1vw 0;
+    color: white;
 }
 
 .top-bar li:hover {
     background: var(--purple-color);
+    
 }
 
 .top-bar li.active {
@@ -123,12 +125,12 @@ html, body {
 }
 
 .top-bar li.active a {
-    color: #171717;
+    color: black;
 }
 
-.top-bar li a:hover {
+/*.top-bar li a:hover {
     text-decoration: underline;
-}
+}*/
 
 .top-bar li a {
     color: white;
@@ -150,13 +152,6 @@ html, body {
     color: white;
     padding: 0;
 }
-
-/*
-.top-bar li:nth-child(4) a:hover {
-    color: #fff;
-	background: #ffe759;
-}
-*/
 
 .top-bar ul {
     margin: 0;
@@ -222,15 +217,15 @@ html, body {
 .title-1 {
     background: #fff;
     color: var(--primary-color);
-    width: 580px;
-    height: 95px;
+    width: 543px;
+    height: 80px;
 }
 
 .title-2 {
     background: var(--primary-color);
     color: #fff;
     width: 450px;
-    height: 95px;
+    height: 80px;
     margin-top: 35px;
 }
 
@@ -287,7 +282,7 @@ margin: 0 auto;
 
 h1 {
     margin: 0 0 0 150px;
-    font-size: 64px;
+    font-size: 50px;
     padding-top: 8px;
     font-family: 'Basier Circle', helvetica, sans-serif;
 }
@@ -1318,7 +1313,7 @@ h2.last-note{
 
 .green-b {
     display: block;
-    height: 800px;
+    height: 900px;
 }
 .top-bar{
     padding: 0;
@@ -1336,7 +1331,6 @@ h2.last-note{
 .std-image {
     margin: 0;
     max-width: 100%; 
-    height: auto;
 }
 
 .green-a  {
@@ -1359,9 +1353,9 @@ h2.last-note{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 20px;
+    margin: 25px 0px;
     height: 250px;
-    width: 100vh;
+    width: 100%;
 }
 
 
