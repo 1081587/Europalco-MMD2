@@ -146,6 +146,11 @@ html, body {
     padding: 4px 0px;
 }
 
+.top-bar .nav-expanded li:nth-child(5) a {
+    color: white;
+    padding: 0;
+}
+
 /*
 .top-bar li:nth-child(4) a:hover {
     color: #fff;
@@ -1540,8 +1545,10 @@ h2.last-note{
 	.nav-expandable {
 	display: flex;
 	margin: 0 auto;
-	justify-content: center;
+    justify-content: center;
+    color: white;
     }
+
     
 	.nav-mobile-final{
 	display: block;
