@@ -82,7 +82,21 @@ html, body {
 }
 
 .nav-mobile-final{
-	display: none;
+    display: none;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 99;
+    height: 100%;
+}
+.nav-mobile {
+    height: 100%;
+    display: grid;
+}
+
+.nav-mobile > nav > ul {
+    margin: 0;
+    height: 100%;
 }
 
 .arrow-down {
@@ -1828,7 +1842,7 @@ grid-area: case6;
 	
 	.top-bar-language {
 	display: flex;
-	padding-top: 112px;
+	padding-top: 62px;
 	justify-content: center;
 	}	
 	
@@ -1869,12 +1883,11 @@ grid-area: case6;
 	.nav-mobile ul li   {
 	display: block;
 	text-align: center;
-	height: 77px;
+	height: 60px;
 	
 	font-weight: 500;
 	font-size: 30px;
-	line-height: 32px;
-	padding-top: 22px;
+	line-height: 18px;
 	text-decoration: none;
 	list-style: none;
 	
@@ -1891,7 +1904,7 @@ grid-area: case6;
 	}
 	
 	.nav-mobile .button-style {
-	padding-left:17% ;
+    padding-left:17% ; 
 	
 	}
 	.nav-mobile .button {
@@ -2297,3 +2310,22 @@ padding: 3% 0% 3% 8%;
 
 }
 
+/** ------- Mobile menu visibility ---------- */
+.nav-border, .nav-border-submenu  {
+    pointer-events: none;
+}
+
+.menu-item-expandable.expanded + ul > li.nav-border-submenu {
+    border-bottom: dotted 1px #ffda00;
+    width: 50%;
+    position: absolute;
+    margin-left: 25%;
+}
+
+.menu-item-expandable + ul {
+    display: none;
+}
+
+.menu-item-expandable.expanded + ul {
+    display: list-item;
+}
