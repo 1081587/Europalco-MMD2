@@ -123,7 +123,7 @@ function redirectMe(){
 
 
 
-let clickCount = [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let clickCount = [1, 1, 1, 0, 1, 1, 1, 1, 1, 1];
 let service = {};
 
 // Studio selection
