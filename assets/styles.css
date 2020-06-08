@@ -1200,40 +1200,46 @@ h2.last-note{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    margin: .8vw;
+    margin: 1.5vw;
 }
 
 #case1 {
-background: url(images/img1.png);
+background: url(images/Portfolio/Case-1-Thumb.png);
 grid-area: case1;
+background-position: center;
 }
 #case2 {
-background: url(images/img1.png);
+background: url(images/Portfolio/Case-2-Thumb.png);
 grid-area: case2;
+background-position: center;
 }
 #case3 {
-background: url(images/img1.png);
+background: url(images/Portfolio/Case-3-Thumb.png);
 grid-area: case3;
+background-position: center;
 }
 #case4 {
-background: url(images/img1.png);
+background: url(images/Portfolio/Case-4-Thumb.png);
 grid-area: case4;
+background-position: center;
 }
 #case5 {
-background: url(images/img1.png);
+background: url(images/Portfolio/Case-5-Thumb.png);
 grid-area: case5;
+background-position: center;
 }
 #case6 {
-background: url(images/img1.png);
+background: url(images/Portfolio/Case-6-Thumb.png);
 grid-area: case6;
+background-position: center;
 }
 
 
 .case-title {
     position: absolute;
     background-color: var(--primary-color);
-    padding: 5px 50px;
-    font-size: 25px;
+    padding: .5vw 4vw;
+    font-size: 2vw;
     top: 50%;
     font-weight: normal;
 }
