@@ -127,6 +127,11 @@ html, body {
 .top-bar li.active a {
     color: black;
 }
+.top-bar .nav-expanded li.active a{
+    color: white;
+}
+
+
 
 /*.top-bar li a:hover {
     text-decoration: underline;
@@ -311,7 +316,7 @@ p {
 .underline {
     background: var(--primary-color);
     width: 100%;
-    height: 5px;
+    height: 3px;
 }
 
 
@@ -1148,13 +1153,12 @@ h2.last-note{
 
 .grid-container-ptf {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: auto;
     grid-template-areas: 
     "title . . "  
     "case1 case2 case3"
     "case4 case5 case6"
-    "case7 case8 case9"
 }
 
 .grid-container-ptf {
@@ -1174,6 +1178,11 @@ h2.last-note{
     padding: 2.5vw;
     font-size: 19px;
     line-height: 1.6;
+}
+
+.portfolio-title p {
+    width: 30vw;
+    margin-top: 2vw;
 }
 
 .case {
@@ -1209,19 +1218,6 @@ grid-area: case5;
 background: url(images/img1.png);
 grid-area: case6;
 }
-#case7 {
-background: url(images/img1.png);
-grid-area: case7;
-}
-#case8 {
-background: url(images/img1.png);
-grid-area: case8;
-}
-#case9 {
-background: url(images/img1.png);
-grid-area: case9;
-}
-
 
 
 .case-title {
@@ -1231,6 +1227,137 @@ grid-area: case9;
     font-size: 25px;
     top: 50%;
     font-weight: normal;
+}
+
+
+
+
+/* ---------------------- Case Page Desktop ----------------------- */
+
+.grid-container-case {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title title . . ."  
+    "data data summary summary summary"
+    "image-a image-a image-a image-a image-a"
+    "studio-p studio-p image-b image-b image-b"
+    "image-c image-c image-c tech-p tech-p"
+}
+
+.grid-container-case {
+    background: var(--foreground-translucent-black);
+    height: 100%;
+    margin: 7vw auto;
+    width: 83vw;
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+.portfolio-title {
+    grid-area: title;
+    padding: 2.5vw;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.case-data {
+    grid-area: data;
+    line-height: 2;
+}
+
+.case-data p {
+    line-height: 2.7;
+    padding: 2vw 2.5vw 2.5vw 6vw;
+    font-size: 18px;
+    margin-top: 0;
+   
+}
+
+.case-summary {
+    grid-area: summary;
+    padding: 2.5vw;
+    padding-top: 0;
+    padding-left: 7vw;
+}
+
+.case-summary h3{
+    color: white;
+    font-size: 20px;
+    margin-top: 2vw;
+}
+
+.case-summary p{
+    width: 36vw;
+}
+
+.case-main-image {
+    grid-area: image-a;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#case1-main-image {
+    background: url(images/img1.png);
+}
+
+.case-studio{
+    grid-area: studio-p;
+    width: 28vw;
+    margin-left: 6vw;
+}
+
+.case-sub-title {
+    padding: 2.5vw;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.case-studio-image {
+    grid-area: image-b;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5vw auto;
+    width: 35vw;
+    height: 28vw;
+}
+
+#case1-studio-image {
+    background: url(images/img1.png);
+}
+
+.case-tech{
+    grid-area: tech-p;
+    width: 28vw;
+    margin-right: 6vw;
+}
+
+.case-tech-image {
+    grid-area: image-c;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5vw auto;
+    width: 35vw;
+    height: 28vw;
+}
+
+#case1-tech-image {
+    background: url(images/img1.png);
+ }
+
+.case-studio ul, .case-tech ul {
+    font-size: 19px;
+    line-height: 2.7;
+    color: white;
+    margin-left: 4vw;
 }
 
 
@@ -2138,7 +2265,11 @@ padding: 3% 0% 3% 8%;
 	
 	p{
 		overflow-x: hidden;
-	}
+    }
+    
+    /** -------- DROPDOWN -------- */
+
+    
 	
     
 }
@@ -2150,49 +2281,6 @@ padding: 3% 0% 3% 8%;
 	.nav-mobile-final{
 		display: none;
     }
-    
-/** -------- DROPDOWN -------- */
-
-.nav-expanded {
-    display: none;
-    background-color: black;
-    z-index: 999;
-}
-
-.top-bar li:hover .nav-expanded {
-    position: absolute;
-    width: auto;
-    left: -100%;
-    display: flex;
-    top: 51px;
-}
-
-.top-bar .submenu li:nth-child(4) a{
-    color: white;
-    padding: 0;
-}
-
-.submenu {
-    margin-left: 15px;
-    width: 450px;
-    justify-content: center;
-}
-
-.submenu::before {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-    border-color: transparent transparent black transparent;
-    content: '';
-    top: -10px;
-    position: absolute;
-}
-
-.top-bar li .submenu-item {
-    display: inline-flex;
-    top: 0;
-}
 
 
 }
