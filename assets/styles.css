@@ -893,7 +893,7 @@ h2.last-note{
 
 
 
-/* ---------------------- GRID TEMPLATE DESKTOP ----------------------- */
+/* ---------------------- LAND GRID TEMPLATE DESKTOP ----------------------- */
 
 .grid-container {
     display: grid;
@@ -1143,6 +1143,96 @@ h2.last-note{
     font-size: 19px;
     line-height: 1.6;
 }
+
+/* ---------------------- Portfolio Desktop ----------------------- */
+
+.grid-container-ptf {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title . . "  
+    "case1 case2 case3"
+    "case4 case5 case6"
+    "case7 case8 case9"
+}
+
+.grid-container-ptf {
+    background: var(--foreground-translucent-black);
+    height: 100%;
+    margin: 7vw auto;
+    width: 83vw;
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7);
+    
+}
+
+.portfolio-title {
+    grid-area: title;
+    padding: 2.5vw;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.case {
+    height: 30vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: .8vw;
+}
+
+#case1 {
+background: url(images/img1.png);
+grid-area: case1;
+}
+#case2 {
+background: url(images/img1.png);
+grid-area: case2;
+}
+#case3 {
+background: url(images/img1.png);
+grid-area: case3;
+}
+#case4 {
+background: url(images/img1.png);
+grid-area: case4;
+}
+#case5 {
+background: url(images/img1.png);
+grid-area: case5;
+}
+#case6 {
+background: url(images/img1.png);
+grid-area: case6;
+}
+#case7 {
+background: url(images/img1.png);
+grid-area: case7;
+}
+#case8 {
+background: url(images/img1.png);
+grid-area: case8;
+}
+#case9 {
+background: url(images/img1.png);
+grid-area: case9;
+}
+
+
+
+.case-title {
+    position: absolute;
+    background-color: var(--primary-color);
+    padding: 5px 50px;
+    font-size: 25px;
+    top: 50%;
+    font-weight: normal;
+}
+
 
 /* ---------------------- TECHS ----------------------- */
 
