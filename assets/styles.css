@@ -1400,6 +1400,72 @@ h2.last-note{
     width: 100%;
 }
 
+/* ---------------------- Technologies - Mobile ----------------------- */ 
+.grid-container-tech {
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    " image image image " 
+    ". article1 . " 
+    " . article2 . "
+    " . image2 . "
+    " . image2 . "
+    " . image2 . " 
+    " . footer . "
+   ;
+}
+
+
+
+.tech-b {
+    display: block;
+    height: 900px;
+}
+.top-bar{
+    padding: 0;
+}
+
+.burger{
+    display: block;
+    cursor: pointer;
+}
+
+.top-bar nav ul{
+    display: none;
+}
+
+.tech-image {
+    margin: 0;
+    max-width: 100%; 
+}
+
+.tech-a  {
+    padding: 0;
+}
+
+.tech-image2 {
+    margin:0;
+    max-width: 100%; 
+    height: auto;
+    padding: 0;
+    margin:0;
+}
+
+
+
+.tech-image2 {
+    grid-area: image2;
+    background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 25px 0px;
+    height: 250px;
+    width: 100%;
+}
 
   /* ---------------------- Nav - Mobile ----------------------- */ 
 
