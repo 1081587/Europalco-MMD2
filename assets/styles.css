@@ -127,6 +127,11 @@ html, body {
 .top-bar li.active a {
     color: black;
 }
+.top-bar .nav-expanded li.active a{
+    color: white;
+}
+
+
 
 /*.top-bar li a:hover {
     text-decoration: underline;
