@@ -424,8 +424,10 @@ p {
 }
 
 .icon-bcg3{
-	width: 12vw;
-	height: 12vw;
+	width: 13vw;
+	height: 13vw;
+	max-width: 185px;
+	max-height: 185px;
 	background: var(--primary-color);
 	border-radius: 4px;
 	padding: 0;
@@ -448,13 +450,14 @@ p {
 
 div.icon-container{
 	display: grid;
-	width: 100%;
+	width: 60%;
+	margin: 0 auto;
 	padding: 0 3%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: auto;
     grid-template-areas:
-    "icon1 icon2 icon3 icon4 icon5"
-    "icon6 icon7 icon8 icon9 icon10"
+    "icon1 icon2 icon3"
+    "icon4 icon5 icon6"
 }
 
 div.icon-container .icon-bcg3:nth-child(1){
@@ -560,6 +563,36 @@ div.icon-container .icon-bcg3:nth-child(10){
 }
 
 .icon7{
+	background: url("icons/ct2-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+	width: 80%;
+	margin: 5% auto;
+}
+
+.icon8{
+	background: url("icons/vt2-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+	width: 80%;
+	margin: 5% auto;
+}
+
+.icon9{
+	background: url("icons/ls-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+	width: 80%;
+	margin: 5% auto;
+}
+
+.icon10{
 	background: url("icons/va-icon.svg");
 	background-position: center;
     background-size: contain;
@@ -569,6 +602,15 @@ div.icon-container .icon-bcg3:nth-child(10){
 	margin: 5% auto;
 }
 
+.icon11{
+	background: url("icons/lt-icon.svg");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+	width: 80%;
+	margin: 5% auto;
+}
 
 .selected-icon{
 	border: 5px solid var(--purple-color);
@@ -1924,6 +1966,7 @@ padding: 3% 0% 3% 8%;
     
     div.icon-container{
 	display: grid;
+	width: 100%;
 	min-width: 320px;
 	max-width: 96%;
 	padding: 0 3%;
@@ -1941,7 +1984,9 @@ padding: 3% 0% 3% 8%;
     .icon-bcg3{
 	    margin: 0 auto 20px;
 	    width: 40vw;
-		height: 40vw
+		height: 40vw;
+		max-height: 300px;
+		max-width: 300px;
     }
     
     input[type=date]{
