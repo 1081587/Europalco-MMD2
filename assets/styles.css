@@ -1196,9 +1196,6 @@ h2.last-note{
 
 .case {
     height: 30vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     margin: 1.5vw;
 }
@@ -1207,31 +1204,43 @@ h2.last-note{
 background: url(images/Portfolio/Case-1-Thumb.png);
 grid-area: case1;
 background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #case2 {
 background: url(images/Portfolio/Case-2-Thumb.png);
 grid-area: case2;
 background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #case3 {
 background: url(images/Portfolio/Case-3-Thumb.png);
 grid-area: case3;
 background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #case4 {
 background: url(images/Portfolio/Case-4-Thumb.png);
 grid-area: case4;
 background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #case5 {
 background: url(images/Portfolio/Case-5-Thumb.png);
 grid-area: case5;
 background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #case6 {
 background: url(images/Portfolio/Case-6-Thumb.png);
 grid-area: case6;
 background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -1312,14 +1321,16 @@ background-position: center;
 
 .case-main-image {
     grid-area: image-a;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0 auto;
+    width: 83vw;
+    height: 30vw;
 }
 
 #case1-main-image {
     background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .case-studio{
@@ -1346,6 +1357,9 @@ background-position: center;
 
 #case1-studio-image {
     background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .case-tech{
@@ -1366,6 +1380,9 @@ background-position: center;
 
 #case1-tech-image {
     background: url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
  }
 
 .case-studio ul, .case-tech ul {
@@ -2284,6 +2301,153 @@ padding: 3% 0% 3% 8%;
 	p{
 		overflow-x: hidden;
     }
+
+/* -------- Portfolio Mobile -------- */
+
+    .grid-container-ptf {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title title "  
+        "case1 case2"
+        "case3 case4"
+        "case5 case6"
+    }
+
+
+.grid-container-ptf {
+    width: 100vw;
+}
+
+.portfolio-title {
+    padding: 5.5vw;
+    font-size: 3.5vw;
+    line-height: 1.6;
+    width: 70vw;
+}
+
+.portfolio-title p {
+    width: 60vw;
+    margin-top: 5vw;
+}
+
+.case {
+    height: 50vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 2vw;
+}
+
+.case-title {
+    position: absolute;
+    background-color: var(--primary-color);
+    padding: .5vw 4vw;
+    font-size: 3.5vw;
+    top: 50%;
+    font-weight: normal;
+}
+
+
+
+    /* -------- Cases Mobile -------- */
+
+    .grid-container-case {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title" 
+        "data"
+        "summary"
+        "image-a"
+        "studio-p"
+        "image-b"
+        "tech-p"
+        "image-c" 
+    }
+    
+    .grid-container-case {
+        width: 100vw;
+    }
+    
+    .case-data p { 
+        font-size: 4.5vw;
+    }
+    
+    .case-summary {
+        margin-bottom: 5vw;
+    }
+    
+    .case-summary h3{
+        font-size: 5.5vw;
+    }
+    
+    .case-summary p{
+        width: 80vw;
+    }
+    
+    .case-main-image {
+        width: 100vw;
+        height: 60vw;
+    }
+    
+    #case1-main-image {
+        background-position: center;
+    }
+    
+    .case-studio{
+        grid-area: studio-p;
+        width: 80vw;
+        margin-left: 6vw;
+    }
+    
+    .case-sub-title {
+        padding: 5.5vw;
+        font-size: 4.5vw;
+        line-height: 1.6;
+        width: 70vw;
+    }
+    
+    .case-studio-image {
+        grid-area: image-b;
+        width: 90vw;
+        height: 60vw;
+        margin: 0 auto;
+    }
+    
+    #case1-studio-image {
+        background-position: center;
+    }
+    
+    .case-tech {
+        grid-area: tech-p;
+        width: 80vw;
+        margin-left: 6vw;
+    }
+    
+    .case-tech-image {
+        grid-area: image-c;
+        margin: 5vw auto;
+        width: 90vw;
+        height: 60vw;
+    }
+    
+    #case1-tech-image {
+        background-position: center;
+     }
+    
+    .case-studio ul, .case-tech ul {
+        font-size: 4.5vw;
+        width: 80vw;
+        margin-top: 0;
+    }
+
+
+
+
     
     /** -------- DROPDOWN -------- */
 
