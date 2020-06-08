@@ -1850,11 +1850,14 @@ grid-area: case6;
 	border-radius: 5px 0 0 5px;
 	}
 
-	.eng {
+	 .eng  {
 	border-radius: 5px;
-	border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffda00  !important; 
+    color: black !important; 
 	}
-	
+    
+    
 	.nav-border {
 	border-bottom: solid 3px #ffda00;
 	position: absolute;
