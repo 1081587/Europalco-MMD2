@@ -34,7 +34,7 @@
 	    /* off-black */
 	    --foreground-translucent-black: rgba(255, 255, 255, 0.95); /*white*/
 	    --foreground-color: #fff;
-	    --dark-color: #171717;
+	    --dark-color: #F0F0F0;
 	    /* only for stuff that doesn't change */
 	    --purple-color: #593a83;
 	    --darkmode-text-color: #171717;
@@ -95,6 +95,11 @@
 	.grid-container-ptf{
 		box-shadow: none !important;
 	}
+	
+	.bottom-mobile-bar{
+		background: var(--foreground-color) !important;
+		border-top: var(--border-accent) !important;
+	} 
 
 
 } 
@@ -783,7 +788,7 @@ div#summary .slide-bcg h2{
 }
 
 .icon-bcg h3 {
-    color: var(--dark-color);
+    color: #171717;
     text-decoration: none;
     text-align: center;
     font-size: 30px;
@@ -791,7 +796,7 @@ div#summary .slide-bcg h2{
 }
 
 .icon-bcg2 h3 {
-    color: var(--dark-color);
+    color: #171717;
     text-decoration: none;
     text-align: center;
     font-size: 2vw;
@@ -800,7 +805,7 @@ div#summary .slide-bcg h2{
 }
 
 .icon-bcg3 h3 {
-    color: var(--dark-color);
+    color: #171717;
     text-decoration: none;
     text-align: left;
     font-size: 20px;
