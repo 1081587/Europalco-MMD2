@@ -189,52 +189,32 @@ for (let i = 0; i < icon2.length; i++){
 		}
 	
 		if(icon2[i] == icon2[0]){
-			service = "1";
+			service = "Augmented reality";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[1]){
-			service = "2";
+			service = "Camera tracking";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[2]){
-			service = "3";
+			service = "Video tracking";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[3]){
-			service = "4";
+			service = "Live streaming";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[4]){
-			service = "5";
+			service = "Live avatar";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[5]){
-			service = "6";
-			iconSelector();
-			clickCount[i + 4]++;
-		}
-		else if(icon2[i] == icon2[6]){
-			service = "7";
-			iconSelector();
-			clickCount[i + 4]++;
-		}
-		else if(icon2[i] == icon2[7]){
-			service = "8";
-			iconSelector();
-			clickCount[i + 4]++;
-		}
-		else if(icon2[i] == icon2[8]){
-			service = "9";
-			iconSelector();
-			clickCount[i + 4]++;
-		}
-		else if(icon2[i] == icon2[9]){
-			service = "10";
+			service = "Interactive touch";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
