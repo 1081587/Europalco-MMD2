@@ -485,27 +485,29 @@ ul.submenu li.submenu-item a{
 }
 
 .footer {
-    background-color: #1E1E1E;
+    background-color: #000;
     display: flex;
     margin: 0 auto;
     box-shadow: 0 4px 11px #000;
 	z-index: 5;
 	position: relative;
+	padding: 0 8.5vw 100px;
 }
 
 .foot-logo {
-	width: 20vw;
+	width: 30%;
 	display: block;
 	background: url("icons/logo.svg");
-	background-size: 50%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 0 auto;
 }
 
 .foot-info {
-    width: 20vw;
+    width: 25%;
     margin: 3vw auto;
+    margin-left: 0;
 }
 
 .foot-info h3 {
@@ -1169,7 +1171,7 @@ h2.last-note{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: calc((83vw - 580px)/2) 580px calc((83vw - 580px)/2);
     grid-template-rows: auto;
     grid-template-areas: 
     ". article1 ." 
@@ -1858,7 +1860,7 @@ background-position: center;
 }
 
 .item-c ul li , .item-d ul li {
-   font-size: 15px;
+   font-size: 16px;
    line-height: 2;
 }
 
@@ -2245,25 +2247,32 @@ background-position: center;
     }
 
     .banner {
-        padding-top: 293px;
+        padding-top: 100px;
     }
 
     .title-1 {
-        width: 323px;
-        height: 56px;
+	    background: #000;
+        width: 260px;
+		height: 56px;
     }
 
     .title-2 {
-        width: 266px;
-        height: 56px;
-        margin-top: 21px;
+	    background: #000;
+        width: 200px;
+		height: 56px;
+		margin-top: 21px;
     }
 
     h1 {
         font-size: 40px;
-        margin-left: 80px;
-        padding-top: 4px;
+		margin-left: 0;
+		padding: 0 0 0 25px;
+		top: 2px;
     }
+    
+    .title-2 h1 {
+	    top: 4px;
+	}
  
     .bcg-img {
         display: none;
@@ -2282,7 +2291,13 @@ background-position: center;
 
 .footer {
     display: block;
-  
+	box-shadow: none;
+	padding-top: 50px;
+}
+
+.underline{
+	width: calc(100vw - 50px);
+	margin: 0 auto;
 }
 
 .foot-info {
@@ -2293,8 +2308,8 @@ background-position: center;
 
 
 .foot-logo {
-    height: 15vh;
-    width: 15vh;
+    height: 150px;
+	width: 150px;
 }
 
 .footer h2 {
@@ -2305,31 +2320,44 @@ background-position: center;
 }
 
 .footer h3 {
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 
 
 
 .contact-flex1 {
-display: flex;
-padding: 3% 0% 3% 8%;
-
+	display: flex;
+	padding: 3% 0% 3% 8%;
+	flex-direction: column;
 }
 .contact-container1 {
     width:30vh;
+    margin: 5px 0 0;
 }
 
 .contact-container2 {
     width: 30vh;
-    
+    margin: 25px 0;
 }
-.contact-container2 p, .contact-container1 p{
-    font-size: 10px;
+
+.contact-container3 {
+    width: 30vh;
+    margin: 0 0 25px;
+}
+
+.contact-container2 p, .contact-container1 p, .contact-container3 p{
+    font-size: 16px;
+}
+
+.contact-container2 a, .contact-container1 a, .contact-container3 a{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
 }
 
 .contact-container1 , .contact-container2 h3 {
-    font-size: 15px;
+    font-size: 18px;
     
 }
 
@@ -2570,6 +2598,7 @@ padding: 3% 0% 3% 8%;
 	
 	p{
 		overflow-x: hidden;
+		font-size: 16px;
     }
 
 /* -------- Portfolio Mobile -------- */

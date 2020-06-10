@@ -44,6 +44,15 @@ const studioBack = document.getElementById("studio-back");
 const techBack = document.getElementById("tech-back");
 
 const dateBack = document.getElementById("date-back");
+const contBack = document.getElementById("contact-back");
+const summaryBack = document.getElementById("summary-back");
+
+const contactSkip = document.getElementById("contact-skip");
+
+contactSkip.addEventListener("click", function(){
+	slide1.classList.remove("desktop-toggle");
+	slide5.classList.add("desktop-toggle");
+});
 
 
 
@@ -102,6 +111,16 @@ dateBack.addEventListener("click", function(){
 	};
 	windowCount = 2;
 	dateDelete();
+});
+
+contBack.addEventListener("click", function(){
+	slide4.classList.add("desktop-toggle");
+	slide3.classList.remove("desktop-toggle");
+});
+
+summaryBack.addEventListener("click", function(){
+	slide5.classList.add("desktop-toggle");
+	slide4.classList.remove("desktop-toggle");
 });
 
 
