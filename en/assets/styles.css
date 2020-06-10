@@ -470,14 +470,17 @@ ul.submenu li.submenu-item a{
 }
 
 .banner {
-    background: url('images/banner.png');
+    background: url('images/banner2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 480px;
+    height: calc(100vh - 50px);
+    max-height: 800px;
+    min-height: 300px;
     margin-top: 50px;
     border-bottom: 13px solid #ffda00;
     padding-top: 10px;
+    position: relative;
 }
 
 .title-1 {
@@ -486,6 +489,8 @@ ul.submenu li.submenu-item a{
 	width: calc(28.65vw + 500px);
 	height: 110px;
 	margin: 20px 0;
+	position: absolute;
+	bottom: 150px;
 }
 
 .title-2 {
@@ -494,6 +499,8 @@ ul.submenu li.submenu-item a{
 	width: calc(28.65vw + 400px);
 	height: 110px;
 	margin: 20px 0;
+	position: absolute;
+	bottom: 282px;
 }
 
 .footer {
@@ -2362,7 +2369,7 @@ background-position: center;
 	    background: #000;
         width: 200px;
 		height: 56px;
-		margin-top: 21px;
+		bottom: 230px;
     }
 
     h1 {
