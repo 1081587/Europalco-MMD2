@@ -1813,7 +1813,7 @@ background-position: center;
 
 
 #AR-main {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/AR/AR-1.jpg);
 }
 #AR-image1, #AR-image2, #AR-image3 {
     background-position: center;
@@ -1821,20 +1821,20 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #AR-image1 {
-    background: url(images/img1.png); 
+    background-image: url(images/Techs/AR/AR-2.jpg); 
 }
 #AR-image2 {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/AR/AR-3.jpg);
 }
-#AR-image2 {
-    background: url(images/img1.png);
+#AR-image3 {
+    background-image: url(images/Techs/AR/AR-4.jpg);
 }
 
 
 
 
 #cam-track-main {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/CamT/CamT-1.jpg);
 }
 #cam-track-image1, #cam-track-image2, #cam-track-image3 {
     background-position: center;
@@ -1842,13 +1842,13 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #cam-track-image1 {
-    background: url(images/img1.png); 
+    background-image: url(images/Techs/CamT/CamT-2.jpg); 
 }
 #cam-track-image2 {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/CamT/CamT-3.jpg);
 }
 #cam-track-image3 {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/CamT/CamT-4.jpg);
 }
 
 
@@ -1856,28 +1856,28 @@ background-position: center;
 
 
 #vid-track-main {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/VideoT/VidT-1.jpg);
 }
 #vid-track-image1, #vid-track-image2, #vid-track-image3 {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 #vid-track-image1 {
-    background: url(images/img1.png); 
+    background-image: url(images/Techs/VideoT/VidT-2.jpg); 
 }
 #vid-track-image2 {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/VideoT/VidT-3.jpg);
 }
 #vid-track-image3 {
-    background: url(images/img1.png);
+    background-image: url(images/Techs/VideoT/VidT-4.jpg);
 }
 
 
 
 
 #stream-main {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 #stream-image1, #stream-image2, #stream-image3 {
     background-position: center;
@@ -1885,20 +1885,20 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #stream-image1 {
-    background: url(images/img1.png); 
+    background-image: url(images/img1.png); 
 }
 #stream-image2 {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 #stream-image3 {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 
 
 
 
 #avatar-main {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 #avatar-image1, #avatar-image2, #avatar-image3 {
     background-position: center;
@@ -1906,20 +1906,20 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #avatar-image1 {
-    background: url(images/img1.png); 
+    background-image: url(images/img1.png); 
 }
 #avatar-image2 {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 #avatar-image3 {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 
 
 
 
 #interact-main {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 #interact-image1, #interact-image2, #interact-image3 {
     background-position: center;
@@ -1927,13 +1927,13 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #interact-image1 {
-    background: url(images/img1.png); 
+    background-image: url(images/img1.png); 
 }
 #interact-image2 {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 #interact-image3 {
-    background: url(images/img1.png);
+    background-image: url(images/img1.png);
 }
 
 
