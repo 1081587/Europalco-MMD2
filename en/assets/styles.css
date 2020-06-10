@@ -163,6 +163,16 @@ html, body {
     background-position: center;
 }
 
+.burger-exit{
+	width: 100px;
+	float: right;
+	height: 100%;
+	background: url("icons/exit.svg");
+	background-size: 32%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .nav-mobile-final{
     display: none;
     position: fixed;

@@ -6,14 +6,13 @@ let currentTab = document.getElementById('current');
 burgerBtn.addEventListener('click', function(){
 	nav.classList.toggle("mobile-toggle");
 	nav.style.transform = 'translateY(window.innerHeight)';
+	burgerBtn.classList.toggle("burger-exit");
 });
 
 const expandable = document.getElementsByClassName("expandable");
 const list = document.getElementsByClassName("sub-list");
 const listParent = document.getElementsByClassName("expandable-li");
 const arrow = document.getElementsByClassName("arrow");
-
-
 
 
 let evenClick = [0, 0];
