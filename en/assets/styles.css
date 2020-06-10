@@ -1202,7 +1202,7 @@ h2.last-note{
 
 .land-image {
     grid-area: image;
-    background: url(images/img1.png);
+    background: url(images/land-image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1390,22 +1390,90 @@ h2.last-note{
 .std-image {
     grid-area: image;
     margin: 200px 40px 10px 20px;
-    background: url(images/img1.png);
+    height: 400px;
+}
+
+#green-main {
+    background: url(images/Studios/Green-1-min.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+}
+#mixed-main {
+    background: url(images/Studios/Virtual-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#virtual-main {
+    background: url(images/Studios/Mixed-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .std-image2 {
     grid-area: image2;
-    background: url(images/img1.png);
+    margin: 20px;
+    height: 18vw;
+    width: 25vw;
+}
+
+#green-image1 {
+    background: url(images/Studios/Green-2-min.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 20px;
-    height: 250px;
-    width: 400px;
+}
+#green-image2 {
+    background: url(images/Studios/Green-3-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#green-image3 {
+    background: url(images/Studios/Green-4-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#virtual-image1 {
+    background: url(images/Studios/Virtual-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#virtual-image2 {
+    background: url(images/Studios/Virtual-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#virtual-image3 {
+    background: url(images/Studios/Virtual-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mixed-image1 {
+    background: url(images/Studios/Mixed-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mixed-image2 {
+    background: url(images/Studios/Mixed-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mixed-image3 {
+    background: url(images/Studios/Mixed-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .green-b {
