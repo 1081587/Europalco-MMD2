@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <link href="assets/styles.css" media="screen" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be0fc92df8.js" crossorigin="anonymous"></script>
     <script src="assets/form.js" defer></script>
     <script src="assets/nav.js" defer></script>
-
+	<title>Europalco studio</title>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                         <div class="arrow-down"></div>
                     </div>
                     <div class="triangle"></div>
-    
+
                     <div class="nav-expanded" id="submenu1">
                         <ul class="submenu">
                             <li class="submenu-item">
@@ -42,13 +43,13 @@
                     </div>
                 </li>
                 <li>
-    
+
                     <div class="nav-expandable">
-                        <a href="#">Technology</a>
+                        <a href="services.html">Technology</a>
                         <div class="arrow-down"></div>
                     </div>
                     <div class="triangle"></div>
-    
+
                     <div class="nav-expanded" id="submenu2">
                         <ul class="submenu">
                             <li class="submenu-item br-words">
@@ -69,15 +70,15 @@
                             <li class="submenu-item br-words">
                                 <a href="services.html#touch">Interactive touch</a>
                             </li>
-    
+
                         </ul>
                     </div>
                 </li>
-    
+
                 <li>
                     <div class="nav-expandable">
-                        <a href="portfolio.html">Cases</a>
-    
+                        <a href="portfolio.html">Portfolio</a>
+
                     </div>
                 </li>
                 <li>
@@ -85,15 +86,14 @@
                         <a href="booking.html">Enquiry form</a>
                     </div>
                 </li>
-                <li>
+                <li class="lang-switch" onclick="window.location.href='../pt/index.html'">
                     <div class="lang-icon"></div>
-                    <h5>EN</h5>
-                    <div class="arrow-down"></div>
+                    <h5>PT</h5>
                 </li>
             </ul>
         </nav>
     </div>
-    
+
     <!-- ///////////////////////// MOBILE NAV ///////////////////////// -->
     <div class="nav-mobile-final desktop-hidden mobile-toggle">
     	<div class="language-btn">
@@ -102,7 +102,7 @@
     	</div>
     	<nav class="nav-burger">
 	    	<ul>
-		    	<li>
+		    	<li id="current">
 		    		<a href="index.html">Home</a>
 		    	</li>
 		    	<li class="expandable-li">
@@ -123,22 +123,22 @@
 		    		<a class="expandable" href="#">Technology<i class="fas fa-chevron-down arrow"></i></a>
 		    		<ul class="sub-list mobile-toggle">
 			    		<li>
-			    			<a href="studio.html">Augmented reality<i class="fas fa-chevron-right"></i></a>
+			    			<a href="services.html#augmented">Augmented reality<i class="fas fa-chevron-right"></i></a>
 			    		</li>
 			    		<li>
-			    			<a href="studio2.html">Camera tracking<i class="fas fa-chevron-right"></i></a>
+			    			<a href="services.html#camera">Camera tracking<i class="fas fa-chevron-right"></i></a>
 			    		</li>
 			    		<li>
-			    			<a href="studio3.html">Video tracking<i class="fas fa-chevron-right"></i></a>
+			    			<a href="services.html#video">Video tracking<i class="fas fa-chevron-right"></i></a>
 			    		</li>
 			    		<li>
-			    			<a href="studio.html">Live streaming <i class="fas fa-chevron-right"></i></a>
+			    			<a href="services.html#live">Live streaming <i class="fas fa-chevron-right"></i></a>
 			    		</li>
 			    		<li>
-			    			<a href="studio2.html">Live avatar<i class="fas fa-chevron-right"></i></a>
+			    			<a href="services.html#avatar">Live avatar<i class="fas fa-chevron-right"></i></a>
 			    		</li>
 			    		<li>
-			    			<a href="studio3.html">Interactive touch<i class="fas fa-chevron-right"></i></a>
+			    			<a href="services.html#touch">Interactive touch<i class="fas fa-chevron-right"></i></a>
 			    		</li>
 		    		</ul>
 		    	</li>
@@ -147,7 +147,7 @@
 		    	</li>
 	    	</ul>
     	</nav>
-    	<a href="booking.html" class="booking-btn-mobile">Enquiery form</a>
+    	<a href="booking.html" class="booking-btn-mobile">Enquiry form</a>
     </div>
 
 
