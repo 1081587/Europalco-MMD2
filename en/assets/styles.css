@@ -1651,6 +1651,21 @@ background-position: center;
     font-weight: normal;
 }
 
+.case {
+    cursor: pointer;
+}
+
+.case:hover {
+    border: 3px solid var(--purple-color);
+    filter: brightness(120%)
+}
+
+#case-back {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 
 
 
@@ -1685,6 +1700,7 @@ background-position: center;
     padding: 2.5vw;
     font-size: 19px;
     line-height: 1.6;
+    padding-top: 18px;
 }
 
 .case-data {
@@ -1725,7 +1741,7 @@ background-position: center;
 }
 
 #case1-main-image {
-    background: url(images/img1.png);
+    background: url(images/Portfolio/case-1-main.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1754,7 +1770,7 @@ background-position: center;
 }
 
 #case1-studio-image {
-    background: url(images/img1.png);
+    background: url(images/Portfolio/case-1-studio.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1777,7 +1793,7 @@ background-position: center;
 }
 
 #case1-tech-image {
-    background: url(images/img1.png);
+    background: url(images/Portfolio/case-1-tech.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1789,6 +1805,7 @@ background-position: center;
     color: white;
     margin-left: 4vw;
 }
+
 
 
 /* ---------------------- TECHS ----------------------- */
@@ -1913,7 +1930,7 @@ background-position: center;
 
 
 #stream-main {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Streaming/stream-main.jpg);
 }
 #stream-image1, #stream-image2, #stream-image3 {
     background-position: center;
@@ -1921,20 +1938,20 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #stream-image1 {
-    background-image: url(images/img1.png); 
+    background-image: url(images/Techs/Streaming/stream-1.jpg);
 }
 #stream-image2 {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Streaming/stream-2.jpg);
 }
 #stream-image3 {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Streaming/stream-3.jpg);
 }
 
 
 
 
 #avatar-main {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Avatar/avatar-main.jpg);
 }
 #avatar-image1, #avatar-image2, #avatar-image3 {
     background-position: center;
@@ -1942,20 +1959,20 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #avatar-image1 {
-    background-image: url(images/img1.png); 
+    background-image: url(images/Techs/Avatar/avatar-image-1.jpg);
 }
 #avatar-image2 {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Avatar/avatar-image-2.jpg);
 }
 #avatar-image3 {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Avatar/avatar-image-3.jpg);
 }
 
 
 
 
 #interact-main {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Interactive/interact-main.jpg);
 }
 #interact-image1, #interact-image2, #interact-image3 {
     background-position: center;
@@ -1963,13 +1980,13 @@ background-position: center;
     background-repeat: no-repeat;
 }
 #interact-image1 {
-    background-image: url(images/img1.png); 
+    background-image: url(images/Techs/Interactive/interact-image-1.jpg);
 }
 #interact-image2 {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Interactive/interact-image-2.jpg);
 }
 #interact-image3 {
-    background-image: url(images/img1.png);
+    background-image: url(images/Techs/Interactive/interact-image-3.jpg);
 }
 
 
