@@ -439,6 +439,8 @@ ul.submenu li.submenu-item a{
     width: 100%;
     text-align: center;
     display: block;
+    text-decoration: none;
+	color: #070707;
 }
 
 .button a:hover {
@@ -913,6 +915,9 @@ div.bottom-bar {
 div.bottom-bar .button{
 	 float: right;
 	 display: block;
+	 height: 30px;
+	padding-top: 7px;
+	font-weight: bold;
 }
 
 a.skip{
@@ -979,12 +984,13 @@ div#summary .slide-bcg h2{
     color: #171717;
     text-decoration: none;
     text-align: left;
-    font-size: 20px;
     padding-bottom: 20px;
     margin: 0;
     position: absolute;
 	bottom: 0;
 	padding: 6%;
+	line-height: 1.1;
+	font-size: 1.6vw;
 }
 
 .form-container{
@@ -1091,6 +1097,15 @@ div#contact .slide-bcg form{
 	border: 2px solid var(--form-border);
 }
 
+.cross{
+	width: 100%;
+	height: 100%;
+	background: url('icons/plus.svg');
+	background-size: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .summary-container{
 	width: 82%;
 	display: block;
@@ -1153,6 +1168,15 @@ div#end div.slide-bcg div.redirect-btn a{
 	font-size: 24px;
 	margin: 0;
 	color: var(--primary-color);
+}
+
+h3 a.change-btn{
+	float: right;
+	margin-right: 50px;
+	color: #929292;
+	font-size: 16px;
+	font-weight: lighter;
+	padding-top: 4px;
 }
 
 p#yourname{
@@ -2443,6 +2467,10 @@ background-position: center;
 	    font-size: 26px;
 	    margin: 15px auto 30px;
 	    padding: 0 20%;
+	}
+	
+	h3 a.change-btn{
+		margin: 0;
 	}
 	
 	.icon-bcg h3{
