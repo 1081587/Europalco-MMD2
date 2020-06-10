@@ -447,6 +447,35 @@ ul.submenu li.submenu-item a{
     text-decoration: none !important;
 }
 
+.lang-icon{
+	background: url(icons/lang-icon.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin: 16px 10px 0 0;
+}
+
+li.lang-switch h5{
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+
+li.lang-switch {
+	height: 50px;
+	position: relative;
+	top: -2px;
+	padding-top: 0;
+	cursor: pointer;
+}
+
+
+/*         CONTENT         */
+
 .bcg-img {
     height: 100vh;
     background: url(images/bcg.svg);
@@ -470,7 +499,7 @@ ul.submenu li.submenu-item a{
 }
 
 .banner {
-    background: url('images/banner2.png');
+    background: url('images/banner2.png'); /* -downloaded from Unsplash, © Alexander Dummer- https://unsplash.com/photos/aS4Duj2j7r4 */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
