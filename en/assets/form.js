@@ -12,6 +12,9 @@ const icon1 = document.getElementsByClassName("icon-bcg2");
 const icon2 = document.getElementsByClassName("icon-bcg3");
 
 
+const changeBtn = document.getElementsByClassName("change-btn");
+
+
 const selectedItem = [];
 const selectedTech = [];
 
@@ -30,13 +33,11 @@ let previousSlide = 0;
 let windowCount = 0;
 let nextSlide = 0;
 
-
-
+const addBtn = document.getElementsByClassName("cross")[0]; 
 const studioNext = document.getElementById("studio-next");
 const techNext = document.getElementById("tech-next");
 const dateNext = document.getElementById("date-next");
 const summaryNext = document.getElementById("summary-next");
-
 const submitNext = document.getElementById("submit-next");
 
 
@@ -108,14 +109,18 @@ dateBack.addEventListener("click", function(){
 		slide4.classList.remove("desktop-toggle");
 		previousSlide.classList.add("desktop-toggle");
 		previousSlide.scrollIntoView();	
-	};
+	}
+	else{
+		slide4.classList.remove("desktop-toggle");
+		slide1.classList.add("desktop-toggle");
+	}
 	windowCount = 2;
 	dateDelete();
 });
 
 contBack.addEventListener("click", function(){
-	slide4.classList.add("desktop-toggle");
-	slide3.classList.remove("desktop-toggle");
+	slide5.classList.remove("desktop-toggle");
+	slide3.classList.add("desktop-toggle");
 });
 
 summaryBack.addEventListener("click", function(){
@@ -123,8 +128,32 @@ summaryBack.addEventListener("click", function(){
 	slide4.classList.remove("desktop-toggle");
 });
 
+addBtn.addEventListener("click", function(){
+	slide4.classList.remove("desktop-toggle");
+	slide1.classList.add("desktop-toggle");
+	windowCount = 2;
+	dateDelete();
+})
 
+changeBtn[0].addEventListener("click", function(){
+	slide6.classList.remove("desktop-toggle");
+	slide2.classList.add("desktop-toggle");
+	windowCount = 2;
+	dateDelete();
+});
 
+changeBtn[1].addEventListener("click", function(){
+	slide6.classList.remove("desktop-toggle");
+	slide3.classList.add("desktop-toggle");
+	windowCount = 2;
+	dateDelete();
+});
+
+changeBtn[2].addEventListener("click", function(){
+	slide6.classList.remove("desktop-toggle");
+	slide5.classList.add("desktop-toggle");
+	formDelete()
+});
 
 const next = document.getElementById("next");
 const skip1 = document.getElementById("skip1");
@@ -273,7 +302,7 @@ studio.addEventListener("click", function(){
 	previousSlide = slide2;
 	windowCount = 1;
 	counter();
-})
+});
 
 tech.addEventListener("click", function(){
 	slide1.classList.toggle("mobile-toggle");
@@ -286,7 +315,7 @@ tech.addEventListener("click", function(){
 	previousSlide = slide3;
 	windowCount = 1;
 	counter();
-})
+});
 
 backBtn.addEventListener("click", function(){
 	counter();	
