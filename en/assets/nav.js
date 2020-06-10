@@ -1,5 +1,7 @@
 const burgerBtn = document.getElementsByClassName("burger")[0];
 const nav = document.getElementsByClassName("nav-mobile-final")[0];
+let currentTab = document.getElementById('current');
+
 
 burgerBtn.addEventListener('click', function(){
 	nav.classList.toggle("mobile-toggle");
@@ -8,21 +10,31 @@ burgerBtn.addEventListener('click', function(){
 
 const expandable = document.getElementsByClassName("expandable");
 const list = document.getElementsByClassName("sub-list");
+const listParent = document.getElementsByClassName("expandable-li");
 const arrow = document.getElementsByClassName("arrow");
 
 
 
-for(let i = 0; i < expandable.length; i++){
+
+let evenClick = [0, 0];
+
+
+for (let i = 0; i < expandable.length; i++){
 	expandable[i].addEventListener('click', function(){
+		evenClick[i]++;
+		currentTab.classList.remove('active-tab');
 		list[i].classList.toggle('mobile-toggle');
-		arrow[i].classList.toggle('fa-chevron-up');
-	})
-}
+		listParent[i].classList.toggle('active-tab');
+		arrow[i].classList.toggle('fa-chevron-up');	
+		if(evenClick[i] % 2 == 0){
+			console.log(evenClick[i])
+			currentTab.classList.add('active-tab');
+		}
+	});
+	console.log(evenClick[i])
+};
 
 
-
-
-/*
 function resizeSubMenu(menuId) {
     // get the width of the browser window
     const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
@@ -76,6 +88,7 @@ if (document.readyState != 'loading'){
   }
 
 
+/*
 
   // mobile nav menu 
 function menuItemClick() {
