@@ -1696,7 +1696,7 @@ background-position: center;
 }
 
 #case1-main-image {
-    background: url(images/img1.png);
+    background: url(images/Portfolio/case-1-main.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1725,7 +1725,7 @@ background-position: center;
 }
 
 #case1-studio-image {
-    background: url(images/img1.png);
+    background: url(images/Portfolio/case-1-studio.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1748,7 +1748,7 @@ background-position: center;
 }
 
 #case1-tech-image {
-    background: url(images/img1.png);
+    background: url(images/Portfolio/case-1-tech.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
